@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; normal */
+/* font-family: 'Passion One', cursive; destaque */
+/* amarelo: #F5CC27 */
+/* azul:    #2C48A8 */
+
+/* Gerais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: white;
+    color: white;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+section {
+    width: 100%;
+}
+/* Gerais */
+
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #000000;
+    width: 100%;
+    border-bottom: 2px solid #e7c145;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.cabecalho-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho .cabecalho-img, nav {
+    padding: 4px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-menu a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    position: relative;
+}
+
+.cabecalho-content nav a::after {
+    position: absolute;
+    content: " ";
+    width: 0px;
+    height: 4px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #F5CC27, #e9e6da);
+    top: 23px;
+    left: 0;
+    transition: 0.2s;
+}
+
+.cabecalho-content nav a:hover::after {
+    width: 100%;
+}
+
+.cabecalho-menu a:hover {
+    color: #F5CC27;
+    transform: scale(1.05);
+}
+/* Cabeçalho */
+
+/* Início */
+.inicio {
+    height: 100vh;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
+    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
+}
+
+.inicio-txt {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.inicio-txt > h2 {
+    font-family: 'Passion One', cursive;
+    color: black;
+    font-weight: 700;
+    font-size: 5em;
+}
+
+.inicio-txt p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.nome-destaque {
+    color: #F5CC27;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+}
+/* Início */
+
+/* Sobre */
+.sobre {
+    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
+    border-top: 2px solid #000000;
+    height: 100vh;
+    padding: 85px;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.sobre-img > img {
+    padding: 0 auto;
+}
+
+.sobre-img {
+    border-radius: 100px;
+}
+
+.sobre-txt {
+    background-color: rgb(163, 159, 159);
+    height: 512px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+}
+
+.sobre-txt > h2 {
+    font-family: 'Passion One', cursive;
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #F5CC27;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+}
+
+.sobre-txt > p {
+    font-size: 30px;
+    text-indent: 50px;
+    text-align: justify;
+}
+/* Sobre */
+
+/* Projetos */
+.projetos {
+    height: 90vh;
+    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
+    border-top: 2px solid #000000;
+}
+
+.projetos-content {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+
+.projetos-content > h2 {
+    font-family:  'Passion One', cursive;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: #F5CC27;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+}
+
+.projetos-content p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(158, 162, 190);
+}
+
+.projetos-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projetos-caixa {
+    background-color: rgb(135, 146, 146);
+    height: 190px;
+    width: 310px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+    border: 1px solid black;
+}
+
+.projetos-caixa:hover {
+    transform: scale(1.01);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527);
+}
+
+.caixa-breve {
+    background-color: rgb(97, 93, 70);
+    width: 500px;
+    text-align: center;
+    padding: 5% 0;
+    position: absolute;
+    top: 38%;
+    left: -33%;
+    transform: rotate(-34deg);
+}
+
+.projetos-link {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.projetos-link p {
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+}
+
+.projetos-link p:hover {
+    color: #0a1a4d;
+}
+/* Projetos */
+
+/* Habilidades */
+.habilidades {
+    height: 98vh;
+    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
+    padding: 30px;
+    border-top: 2px solid #000000;
+}
+
+.habilidades-caixa > img {
+    width: 150px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.habilidades-caixa > img:hover {
+    transform: scale(1.06);
+}
+
+.habilidades-content > h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Passion One', cursive;
+    color: #F5CC27;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.habilidades-caixa > h3 {
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    border-top: 1px solid #000000;
+}
+
+.habilidades-box {
+    margin: 140px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.habilidades-caixa {
+    background-color: rgb(135, 146, 146);
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+    border: 1px solid #000000;
+}
+/* Habilidades */
+
+/* Footer */
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    box-shadow: -2px 0px 3px rgb(0, 0, 0);
+    border-top: 2px solid #F5CC27;
+    padding-top: 5px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 15px;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+footer img {
+    background-color: #ffffff;
+    padding: 7px;
+    margin-right: 8px;
+    border-radius: 10px;
+    border: 1px solid #2C48A8;
+    transition: 0.8s;
+}
+
+.footer-sociais a:hover > img {
+    transform: rotate(360deg);
+}
+/* Footer */
