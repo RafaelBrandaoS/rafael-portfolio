@@ -32,6 +32,7 @@ p {
 
 section {
     width: 100%;
+    background-image: linear-gradient(133deg, white, rgb(218, 218, 218));
 }
 /* Gerais */
 
@@ -100,7 +101,6 @@ section {
 .inicio {
     height: 100vh;
     box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
-    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
 }
 
 .inicio-txt {
@@ -131,7 +131,6 @@ section {
 
 /* Sobre */
 .sobre {
-    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
     border-top: 2px solid #000000;
     height: 100vh;
     padding: 85px;
@@ -177,7 +176,6 @@ section {
 /* Projetos */
 .projetos {
     height: 90vh;
-    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
     border-top: 2px solid #000000;
 }
 
@@ -258,7 +256,6 @@ section {
 /* Habilidades */
 .habilidades {
     height: 98vh;
-    background-image: linear-gradient(to bottom, white, rgb(218, 218, 218));
     padding: 30px;
     border-top: 2px solid #000000;
 }
