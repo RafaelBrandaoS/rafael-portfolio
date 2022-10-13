@@ -32,7 +32,8 @@ p {
 
 section {
     width: 100%;
-    background-image: linear-gradient(133deg, #ffffff, #dadada);
+    background-color: #ffffff;
+    border-top: 2px solid #000000;
 }
 /* Gerais */
 
@@ -114,6 +115,7 @@ section {
     color: black;
     font-weight: 700;
     font-size: 5em;
+    text-shadow: 1px 1px 2px #00000070;
 }
 
 .inicio-txt p {
@@ -121,6 +123,7 @@ section {
     color: black;
     font-weight: 400;
     font-size: 1.5em;
+    text-shadow: 1px 1px 2px #00000070;
 }
 
 .nome-destaque {
@@ -131,7 +134,6 @@ section {
 
 /* Sobre */
 .sobre {
-    border-top: 2px solid #000000;
     height: 100vh;
     padding: 85px;
 }
@@ -151,11 +153,11 @@ section {
 }
 
 .sobre-txt {
-    background-color: rgb(163, 159, 159);
+    background-color: #1e2152;
     height: 512px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+    box-shadow: 3px 3px 4px #00000086;
 }
 
 .sobre-txt > h2 {
@@ -163,20 +165,21 @@ section {
     font-size: 60px;
     margin-bottom: 30px;
     color: #F5CC27;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+    text-shadow: 2px 2px 3px #00000070;
 }
 
 .sobre-txt > p {
     font-size: 30px;
     text-indent: 50px;
     text-align: justify;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #00000070;
 }
 /* Sobre */
 
 /* Projetos */
 .projetos {
     height: 90vh;
-    border-top: 2px solid #000000;
 }
 
 .projetos-content {
@@ -192,7 +195,7 @@ section {
     font-size: 70px;
     margin-bottom: 40px;
     color: #F5CC27;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+    text-shadow: 2px 2px 0px #00000070;
 }
 
 .projetos-content p {
@@ -209,7 +212,7 @@ section {
 }
 
 .projetos-caixa {
-    background-color: rgb(135, 146, 146);
+    background-color: #879292;
     height: 190px;
     width: 310px;
     border-radius: 20px;
@@ -226,7 +229,7 @@ section {
 }
 
 .caixa-breve {
-    background-color: rgb(97, 93, 70);
+    background-color: #837c16;
     width: 500px;
     text-align: center;
     padding: 5% 0;
@@ -234,6 +237,11 @@ section {
     top: 38%;
     left: -33%;
     transform: rotate(-34deg);
+}
+
+.caixa-breve p {
+    color: #000000;
+    font-size: 18px;
 }
 
 .projetos-link {
@@ -249,7 +257,7 @@ section {
 }
 
 .projetos-link p:hover {
-    color: #0a1a4d;
+    color: #2731F5;
 }
 /* Projetos */
 
@@ -257,7 +265,6 @@ section {
 .habilidades {
     height: 98vh;
     padding: 30px;
-    border-top: 2px solid #000000;
 }
 
 .habilidades-caixa > img {
@@ -275,7 +282,7 @@ section {
     text-align: center;
     font-family: 'Passion One', cursive;
     color: #F5CC27;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+    text-shadow: 2px 2px 3px #00000070;
     font-size: 70px;
     font-weight: 700;
 }
@@ -298,7 +305,7 @@ section {
 }
 
 .habilidades-caixa {
-    background-color: rgb(135, 146, 146);
+    background-color: #879292;
     border-radius: 20px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
     border: 1px solid #000000;
