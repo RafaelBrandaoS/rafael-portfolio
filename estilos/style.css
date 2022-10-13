@@ -141,11 +141,9 @@ section {
 .sobre-content {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
-}
-
-.sobre-img > img {
-    padding: 0 auto;
+    margin: 0 auto;
 }
 
 .sobre-img {
@@ -154,7 +152,6 @@ section {
 
 .sobre-txt {
     background-color: #1e2152;
-    height: 512px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 3px 3px 4px #00000086;
@@ -170,7 +167,7 @@ section {
 
 .sobre-txt > p {
     font-size: 30px;
-    text-indent: 50px;
+    text-indent: 60px;
     text-align: justify;
     color: #ffffff;
     text-shadow: 2px 2px 3px #00000070;
@@ -270,7 +267,6 @@ section {
 .habilidades-caixa > img {
     width: 150px;
     padding: 15px;
-    margin: 5px;
 }
 
 .habilidades-caixa > img:hover {
@@ -329,20 +325,30 @@ footer {
     padding: 18px 15px;
 }
 
+.footer-creditos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 footer p {
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 5px;
 }
 
 footer img {
     background-color: #ffffff;
     padding: 7px;
-    margin-right: 8px;
     border-radius: 10px;
     border: 1px solid #2C48A8;
     transition: 0.8s;
+}
+
+.footer-sociais {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
 }
 
 .footer-sociais a:hover > img {
