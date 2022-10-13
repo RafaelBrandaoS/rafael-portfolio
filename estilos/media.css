@@ -39,15 +39,11 @@
     }
 
     .sobre-content img {
-        width: 240px;
+        width: 320px;
     }
 
     .projetos {
         height: 100%;
-    }
-
-    .projetos-box {
-        flex-direction: column;
     }
 
     .habilidades-content h2 {
@@ -64,5 +60,9 @@
     .sobre-content {
         flex-direction: column;
         max-width: 600px;
+    }
+
+    .projetos-box {
+        flex-direction: column;
     }
 }

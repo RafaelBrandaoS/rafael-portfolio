@@ -133,7 +133,7 @@ section {
 
 /* Sobre */
 .sobre {
-    padding: 60px;
+    padding: 30px;
 }
 
 .sobre-content {
@@ -174,7 +174,7 @@ section {
 
 /* Projetos */
 .projetos {
-    height: 90vh;
+    padding: 30px;
 }
 
 .projetos-content {
