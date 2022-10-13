@@ -1,0 +1,64 @@
+@media screen and (max-width: 760px) {
+    .cabecalho {
+        position: static;
+    }
+
+    .cabecalho-content {
+        flex-direction: column;
+    }
+
+    .cabecalho-menu {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .cabecalho-menu a {
+        font-size: 1em;
+    }
+
+    .inicio-txt h2 {
+        font-size: 3.7em;
+    }
+
+    .inicio-txt p {
+        font-size: 1.2em;
+    }
+
+    .sobre {
+        height: 100%;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+    }
+
+    .sobre-content h2 {
+        font-size: 3em;
+    }
+
+    .sobre-content p {
+        font-size: 1em;
+    }
+
+    .sobre-content img {
+        width: 240px;
+    }
+
+    .projetos {
+        height: 100%;
+    }
+
+    .projetos-box {
+        flex-direction: column;
+    }
+
+    .habilidades-content h2 {
+        font-size: 3em;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

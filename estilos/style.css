@@ -17,7 +17,6 @@
 
 body {
     font-size: 100%;
-    background-color: rgb(119, 119, 119);
     color: white;
 }
 
@@ -101,7 +100,6 @@ section {
 /* Início */
 .inicio {
     height: 100vh;
-    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
     position: relative;
 }
 
@@ -135,7 +133,6 @@ section {
 
 /* Sobre */
 .sobre {
-    height: 100vh;
     padding: 85px;
 }
 
@@ -261,7 +258,6 @@ section {
 
 /* Habilidades */
 .habilidades {
-    height: 98vh;
     padding: 30px;
 }
 
@@ -306,6 +302,7 @@ section {
     border-radius: 20px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
     border: 1px solid #000000;
+    margin: 20px;
 }
 /* Habilidades */
 
