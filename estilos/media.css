@@ -27,10 +27,7 @@
 
     .sobre {
         height: 100%;
-    }
-
-    .sobre-content {
-        flex-direction: column;
+        padding: 30px;
     }
 
     .sobre-content h2 {
@@ -60,5 +57,12 @@
     .footer {
         flex-direction: column;
         gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .sobre-content {
+        flex-direction: column;
+        max-width: 600px;
     }
 }
