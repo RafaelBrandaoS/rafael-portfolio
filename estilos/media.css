@@ -14,7 +14,7 @@
     }
 
     .cabecalho-content {
-        background-color: rgba(0, 0, 0, 0.808);
+        background-color: rgba(0, 0, 0, 0.880);
         height: 100vh;
         border-bottom: none;
         flex-direction: column;
