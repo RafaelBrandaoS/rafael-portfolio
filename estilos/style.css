@@ -38,19 +38,22 @@ section {
 
 
 /* Cabeçalho */
-.cabecalho {
-    background-color: #000000;
+header.cabecalho {
     width: 100%;
-    border-bottom: 2px solid #e7c145;
-    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
 }
 
+.cabecalho > i {
+    display: none;
+}
+
 .cabecalho-content {
-    max-width: 1200px;
+    background-color: #000000;
+    border-bottom: 2px solid #e7c145;
+    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -132,7 +135,7 @@ section {
 /* Início */
 
 /* Sobre */
-.sobre {
+section.sobre {
     padding: 30px;
 }
 
@@ -140,16 +143,13 @@ section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     gap: 40px;
-    margin: 0 auto;
-}
-
-.sobre-img {
-    border-radius: 100px;
 }
 
 .sobre-txt {
     background-color: #1e2152;
+    max-width: 600px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 3px 3px 4px #00000086;

@@ -1,10 +1,25 @@
-@media screen and (max-width: 760px) {
-    .cabecalho {
-        position: static;
+@media screen and (max-width: 768px) {
+    .cabecalho > i {
+        position: fixed;
+        z-index: 2;
+        right: 0;
+        font-size: 30px;
+        display: block;
+        background-color: #F5CC27;
+        color: black;
+        margin: 25px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
     }
 
     .cabecalho-content {
+        background-color: rgba(0, 0, 0, 0.808);
+        height: 100vh;
+        border-bottom: none;
         flex-direction: column;
+        justify-content: center;
+        display: none;
     }
 
     .cabecalho-menu {
@@ -13,16 +28,29 @@
         padding-bottom: 20px;
     }
 
+    .cabecalho-content img {
+        background-color: black;
+        width: 280px;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px black;
+    }
+
     .cabecalho-menu a {
-        font-size: 1em;
+        font-size: 1.2em;
+    }
+
+    .cabecalho-content nav a::after {
+        top: 30px;
+    }
+
+    .inicio {
+        border-top: none;
     }
 
     .inicio-txt h2 {
         font-size: 3.7em;
-    }
-
-    .inicio-txt p {
-        font-size: 1.2em;
     }
 
     .sobre {
