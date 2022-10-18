@@ -146,6 +146,7 @@ section.sobre {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    margin: 0 auto;
 }
 
 .sobre-txt {
@@ -173,19 +174,21 @@ section.sobre {
 }
 /* Sobre */
 
-/* Projetos */
-.projetos {
+/* Projetos Pessoais */
+
+/* Projetos Pessoais */
+
+/* Projetos Profissionais */
+.projetos, .projetos-m {
     padding: 30px;
 }
 
-.projetos-content {
+.projetos-content, .projetos-content-m {
     max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
-    padding-top: 90px;
+    margin-top: 10%;
 }
 
-.projetos-content > h2 {
+.projetos-content > h2, .projetos-content-m > h2 {
     font-family:  'Passion One', cursive;
     text-align: center;
     font-size: 70px;
@@ -194,18 +197,18 @@ section.sobre {
     text-shadow: 2px 2px 0px #00000070;
 }
 
-.projetos-box {
+.projetos-box, .projetos-box-m {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 30px;
 }
 
-.projetos-caixa {
+.projetos-caixa, .projetos-caixa-m {
     background-color: #ffffff;
-    height: 190px;
-    width: 310px;
+    height: 180px;
+    width: 320px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -214,9 +217,13 @@ section.sobre {
     border: 1px solid black;
 }
 
-.projetos-caixa:hover {
-    transform: scale(1.01);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.527);
+.projetos-caixa-m img {
+    width: 100%;
+}
+
+.projetos-caixa:hover, .projetos-caixa-m:hover {
+    transform: scale(1.01) translateY(-2px);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.527);
 }
 
 .caixa-breve {
@@ -250,7 +257,7 @@ section.sobre {
 .projetos-link p:hover {
     color: #2731F5;
 }
-/* Projetos */
+/* Projetos Profissionais */
 
 /* Habilidades */
 .habilidades {

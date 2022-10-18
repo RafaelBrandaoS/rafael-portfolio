@@ -70,8 +70,8 @@
         width: 320px;
     }
 
-    .projetos {
-        height: 100%;
+    .projetos, .projetos-m {
+        min-height: 100vh;
     }
 
     .habilidades-content h2 {
@@ -90,7 +90,7 @@
         max-width: 600px;
     }
 
-    .projetos-box {
+    .projetos-box, .projetos-box-m {
         flex-direction: column;
     }
 }
