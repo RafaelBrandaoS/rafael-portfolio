@@ -141,6 +141,7 @@ section.sobre {
 }
 
 .sobre-content {
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -174,18 +175,23 @@ section.sobre {
 }
 /* Sobre */
 
-/* Projetos Pessoais */
-
-/* Projetos Pessoais */
-
-/* Projetos Profissionais */
+/* Projetos */
 .projetos, .projetos-m {
     padding: 30px;
+}
+
+section.projetos {
+    border-top: none;
+}
+
+section.projetos h2 {
+    border-top: 2px solid black;
 }
 
 .projetos-content, .projetos-content-m {
     max-width: 1200px;
     margin-top: 10%;
+    margin: 0 auto;
 }
 
 .projetos-content > h2, .projetos-content-m > h2 {
@@ -257,11 +263,16 @@ section.sobre {
 .projetos-link p:hover {
     color: #2731F5;
 }
-/* Projetos Profissionais */
+/* Projetos */
 
 /* Habilidades */
 .habilidades {
     padding: 30px;
+}
+
+.habilidades-content {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .habilidades-caixa > img {
