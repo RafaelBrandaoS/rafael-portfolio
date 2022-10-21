@@ -66,16 +66,8 @@
         font-size: 1em;
     }
 
-    .sobre-content img {
-        width: 320px;
-    }
-
     .projetos, .projetos-m {
         min-height: 100vh;
-    }
-
-    .habilidades-content h2 {
-        font-size: 3em;
     }
 
     .footer {
@@ -88,6 +80,14 @@
     .sobre-content {
         flex-direction: column;
         max-width: 600px;
+    }
+
+    .sobre-content p {
+        font-size: 1.2em;
+    }
+
+    .sobre-content img {
+        width: 320px;
     }
 
     .projetos-box, .projetos-box-m {

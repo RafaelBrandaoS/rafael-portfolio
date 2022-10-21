@@ -50,12 +50,13 @@ header.cabecalho {
 
 .cabecalho > i {
     display: none;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .cabecalho-content {
     background-color: #000000;
     border-bottom: 2px solid #e7c145;
-    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.493);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -118,7 +119,7 @@ header.cabecalho {
     color: black;
     font-weight: 700;
     font-size: 5em;
-    text-shadow: 1px 1px 2px #00000070;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .inicio-txt p {
@@ -126,12 +127,12 @@ header.cabecalho {
     color: black;
     font-weight: 400;
     font-size: 1.5em;
-    text-shadow: 1px 1px 2px #00000070;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .nome-destaque {
     color: #F5CC27;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 /* Início */
 
@@ -145,8 +146,8 @@ section.sobre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
+    gap: 60px;
     margin: 0 auto;
 }
 
@@ -155,7 +156,7 @@ section.sobre {
     max-width: 600px;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 3px 3px 4px #00000086;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.452);
 }
 
 .sobre-txt > h2 {
@@ -163,7 +164,7 @@ section.sobre {
     font-size: 60px;
     margin-bottom: 30px;
     color: #F5CC27;
-    text-shadow: 2px 2px 3px #00000070;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .sobre-txt > p {
@@ -171,7 +172,7 @@ section.sobre {
     text-indent: 60px;
     text-align: justify;
     color: #ffffff;
-    text-shadow: 2px 2px 3px #00000070;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 /* Sobre */
 
@@ -186,11 +187,16 @@ section.projetos {
 
 section.projetos h2 {
     border-top: 2px solid black;
+    padding-top: 30px;
 }
 
 .projetos-content, .projetos-content-m {
     max-width: 1200px;
-    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
     margin: 0 auto;
 }
 
@@ -198,9 +204,8 @@ section.projetos h2 {
     font-family:  'Passion One', cursive;
     text-align: center;
     font-size: 70px;
-    margin-bottom: 40px;
     color: #F5CC27;
-    text-shadow: 2px 2px 0px #00000070;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .projetos-box, .projetos-box-m {
@@ -219,7 +224,7 @@ section.projetos h2 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.411);
     border: 1px solid black;
 }
 
@@ -229,7 +234,7 @@ section.projetos h2 {
 
 .projetos-caixa:hover, .projetos-caixa-m:hover {
     transform: scale(1.01) translateY(-2px);
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.527);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.425);
 }
 
 .caixa-breve {
@@ -244,7 +249,7 @@ section.projetos h2 {
 }
 
 .caixa-breve p {
-    color: #ffffff;
+    color: #e7c145;
     font-size: 18px;
 }
 
@@ -272,6 +277,11 @@ section.projetos h2 {
 
 .habilidades-content {
     max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
     margin: 0 auto;
 }
 
@@ -285,13 +295,11 @@ section.projetos h2 {
 }
 
 .habilidades-content > h2 {
-    margin-top: 40px;
+    font-family:  'Passion One', cursive;
     text-align: center;
-    font-family: 'Passion One', cursive;
-    color: #F5CC27;
-    text-shadow: 2px 2px 3px #00000070;
     font-size: 70px;
-    font-weight: 700;
+    color: #F5CC27;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .habilidades-caixa > h3 {
@@ -309,14 +317,14 @@ section.projetos h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 60px;
 }
 
 .habilidades-caixa {
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.527);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
     border: 1px solid #000000;
-    margin: 20px;
 }
 /* Habilidades */
 
