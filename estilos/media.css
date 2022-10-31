@@ -1,4 +1,5 @@
 @media screen and (max-width: 768px) {
+    
     .cabecalho > i {
         position: fixed;
         z-index: 2;
@@ -11,6 +12,10 @@
         padding: 10px;
         border-radius: 8px;
         cursor: pointer;
+    }
+
+    .cabecalho > i:hover {
+        transform: scale(1.6);
     }
 
     .cabecalho-content {
