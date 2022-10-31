@@ -14,10 +14,6 @@
         cursor: pointer;
     }
 
-    .cabecalho > i:hover {
-        transform: scale(1.6);
-    }
-
     .cabecalho-content {
         background-color: rgba(0, 0, 0, 0.880);
         height: 100vh;
