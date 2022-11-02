@@ -70,7 +70,7 @@ header.cabecalho {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .cabecalho .cabecalho-img, nav {
@@ -157,11 +157,15 @@ section.sobre {
 .sobre-content {
     max-width: 1200px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
+    flex-wrap: wrap;
     margin: 0 auto;
+    gap: 60px;
+}
+
+.sobre-content img {
+    width: 400px;
 }
 
 .sobre-txt {
@@ -192,6 +196,7 @@ section.sobre {
 /* Projetos */
 .projetos, .projetos-m {
     padding: 30px;
+    min-height: 100vh;
 }
 
 section.projetos {
@@ -227,6 +232,7 @@ section.projetos h2 {
     align-items: center;
     justify-content: space-around;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .projetos-caixa, .projetos-caixa-m {
@@ -362,6 +368,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 18px 15px;
+    flex-wrap: wrap;
 }
 
 .footer-creditos {

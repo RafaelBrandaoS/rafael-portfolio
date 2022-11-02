@@ -67,21 +67,17 @@
         font-size: 1em;
     }
 
-    .projetos, .projetos-m {
-        min-height: 100vh;
+    .footer {
+        gap: 15px;
     }
 
-    .footer {
-        flex-direction: column;
-        gap: 15px;
+    .footer-sociais, .footer-creditos {
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 1050px) {
-    .sobre-content {
-        flex-direction: column;
-        max-width: 600px;
-    }
 
     .sobre-content p {
         font-size: 1.2em;
@@ -89,9 +85,5 @@
 
     .sobre-content img {
         width: 320px;
-    }
-
-    .projetos-box, .projetos-box-m {
-        flex-direction: column;
     }
 }
