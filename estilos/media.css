@@ -67,6 +67,10 @@
         font-size: 1em;
     }
 
+    #ver-mais-p {
+        display: block;
+    }
+
     .footer {
         gap: 15px;
     }

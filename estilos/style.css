@@ -279,7 +279,7 @@ section.projetos h2 {
     padding: 10px;
     border-radius: 50px;
     background: var(--bg-color2);
-    transition: 0.2s;
+    transition: .2s;
 }
 
 .projetos-link p {
