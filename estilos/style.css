@@ -232,6 +232,7 @@ section.projetos h2 {
     justify-content: space-around;
     gap: 30px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .projetos-caixa, .projetos-caixa-m {
@@ -254,6 +255,95 @@ section.projetos h2 {
 .projetos-caixa:hover, .projetos-caixa-m:hover {
     transform: scale(1.01) translateY(-3px);
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.425);
+}
+
+.projeto-mais-container {
+    background-color: #000000;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-45%);
+    overflow: hidden;
+    z-index: 100;
+    padding: 20px;
+    border-radius: 20px;
+    width: 1000px;
+    transition: 1s;
+    display: none;
+}
+
+.ativar {
+    display: block !important;
+}
+
+.projeto-mais-container h2 {
+    font-family:  'Passion One', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.projeto-mais {
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+
+.projeto-mais i {
+    position: absolute;
+    right: 0px;
+    top: -80px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.projeto-mais h2 {
+    color: #2C48A8;
+}
+
+.projeto-mais img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+.projeto-mais-txt {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ 
+.projeto-mais-link {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.projeto-mais-link div {
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    background: #000000;
+    transition: .2s;
+}
+
+.projeto-mais-link div:hover {
+    transform: scale(1.03)  translateY(-2px);
+}
+
+.projeto-mais-txt p {
+    font-size: 1.5em;
+    text-align: justify;
+    font-family:'Roboto', sans-serif;
+}
+
+.projeto-mais-link div a {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
 }
 
 .caixa-breve {
