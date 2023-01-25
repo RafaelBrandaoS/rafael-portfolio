@@ -131,6 +131,26 @@
         font-size: 20px;
     }
 
+    .habilidades-container {
+        gap: 10px;
+    }
+
+    .habilidades-sobre-explica {
+        font-size: 1em;
+    }
+
+    .habilidades-sobre-caixa {
+        padding: 10px;
+    }
+
+    .habilidades-sobre-caixa h3 {
+        font-size: 2em;
+    }
+
+    .habilidades-sobre-caixa p {
+        font-size: 1em;
+    }
+
     .footer {
         gap: 15px;
     }
