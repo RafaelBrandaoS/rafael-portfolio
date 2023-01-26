@@ -265,19 +265,21 @@ section.projetos h2 {
 .projeto-mais-container {
     background-color: #000000e1;
     position: fixed;
+    overflow: hidden;
     top: 50%;
     transform: translateY(-45%);
-    overflow: hidden;
-    z-index: 100;
+    z-index: 2;
     padding: 20px;
     border-radius: 20px;
     width: 1000px;
-    transition: 1s;
-    display: none;
+    transition: .3s;
+    scale: 0;
+    opacity: 0;
 }
 
 .projeto-mais-ativo {
-    display: block !important;
+    scale: 1 !important;
+    opacity: 1 !important;
 }
 
 .projeto-mais-container h2 {
@@ -473,7 +475,7 @@ section.projetos h2 {
     opacity: 0;
     position: absolute;
     top: 0px;
-    transition: .5s;
+    transition: .3s;
 }
 
 .habilidades-ativo {
