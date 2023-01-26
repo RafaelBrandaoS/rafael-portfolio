@@ -64,11 +64,6 @@
         font-size: 1.2em;
     }
 
-    .sobre {
-        height: 100%;
-        padding: 30px;
-    }
-
     .sobre-content h2 {
         font-size: 2.5em;
     }
@@ -123,12 +118,16 @@
         font-size: .8em;
     }
 
-    .habilidades-caixa > img {
+    .habilidades-caixa {
         width: 100px;
     }
 
+    .habilidades-caixa > img {
+        width: 100%;
+    }
+
     .habilidades-caixa > h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .habilidades-container {
@@ -137,6 +136,7 @@
 
     .habilidades-sobre-explica {
         font-size: 1em;
+        padding: 10px;
     }
 
     .habilidades-sobre-caixa {

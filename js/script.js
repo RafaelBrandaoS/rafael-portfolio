@@ -2,7 +2,6 @@
 var menuBar = document.querySelector('#burguer')
 
 menuBar.addEventListener('click', function() {
-
     let menuMobile = document.querySelector('.cabecalho-menu')
 
     if (menuMobile.classList.contains('mostrar-menu')) {

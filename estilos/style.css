@@ -24,6 +24,11 @@
     --text-color2: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 69px;
+}
+
 body {
     font-size: 100%;
     color: white;
@@ -98,7 +103,7 @@ header.cabecalho {
     background-image: linear-gradient(to right, var(--main-color), #e9e6da);
     top: 23px;
     left: 0;
-    transition: 0.2s;
+    transition: .3s;
 }
 
 .cabecalho-content nav a:hover::after {
@@ -415,10 +420,11 @@ section.projetos h2 {
     border: 1px solid #000000;
     transition: 0.3s;
     cursor: pointer;
+    width: 130px;
 }
 
 .habilidades-caixa > img {
-    width: 150px;
+    width: 100%;
     padding: 15px;
 }
 
@@ -530,6 +536,6 @@ footer img {
 }
 
 .footer-sociais a:hover > img {
-    transform: rotate(360deg) scale(1.06);
+    transform: rotateX(360deg) scale(1.1);
 }
 /* Footer */
