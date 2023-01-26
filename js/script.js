@@ -1,39 +1,34 @@
 /* menu */
-// pegar o botão do menu
 var menuBar = document.querySelector('#burguer')
 
-// adicionar evento click no butão do menu
 menuBar.addEventListener('click', function() {
 
-    // pegar o menu 
     let menuMobile = document.querySelector('.cabecalho-menu')
 
-    // verificar se o menu está com a classe mostrar-menu
     if (menuMobile.classList.contains('mostrar-menu')) {
-        // remover a classe para mostrar o menu
         menuMobile.classList.remove('mostrar-menu')
-        // colocar o burguer no butão menu
         menuBar.innerHTML = 'menu'
     } else {
-        // adicionar a classe para esconder o menu
         menuMobile.classList.add('mostrar-menu')
-        // colocar o x no butão menu
         menuBar.innerHTML = 'close'
     }
 
-    // esconder o menu quando clicar em qualque opção
     menuMobile.addEventListener('click', function() {
-        // remover a classe para mostrar o menu
         menuMobile.classList.remove('mostrar-menu')
-        // colocar o burguer no butão menu
         menuBar.innerHTML = 'menu'
     })
 })
 
 /* mostrar mais sobre projetos */
-// projeto android
 var projetoAndroid = document.getElementById('p-android')
+var projetoCordel = document.getElementById('p-cordel')
+var projetoSocial = document.getElementById('p-social')
+var projetoHora = document.getElementById('p-hora')
+var projetoIdade = document.getElementById('p-idade')
+var projetoCalculadora = document.getElementById('p-calculadora')
+var projetoLista = document.getElementById('p-lista')
 
+// projeto android
 projetoAndroid.addEventListener('click', function() {
     let mais = document.getElementById('projeto-android')
     let close = document.getElementById('projeto-android-close')
@@ -47,8 +42,6 @@ projetoAndroid.addEventListener('click', function() {
 })
 
 // projeto cordel
-var projetoCordel = document.getElementById('p-cordel')
-
 projetoCordel.addEventListener('click', function() {
     let mais = document.getElementById('projeto-cordel')
     let close = document.getElementById('projeto-cordel-close')
@@ -62,8 +55,6 @@ projetoCordel.addEventListener('click', function() {
 })
 
 // projeto social
-var projetoSocial = document.getElementById('p-social')
-
 projetoSocial.addEventListener('click', function() {
     let mais = document.getElementById('projeto-social')
     let close = document.getElementById('projeto-social-close')
@@ -77,8 +68,6 @@ projetoSocial.addEventListener('click', function() {
 })
 
 // projeto hora
-var projetoHora = document.getElementById('p-hora')
-
 projetoHora.addEventListener('click', function() {
     let mais = document.getElementById('projeto-hora')
     let close = document.getElementById('projeto-hora-close')
@@ -92,8 +81,6 @@ projetoHora.addEventListener('click', function() {
 })
 
 // projeto idade
-var projetoIdade = document.getElementById('p-idade')
-
 projetoIdade.addEventListener('click', function() {
     let mais = document.getElementById('projeto-idade')
     let close = document.getElementById('projeto-idade-close')
@@ -107,8 +94,6 @@ projetoIdade.addEventListener('click', function() {
 })
 
 // projeto calculadora
-var projetoCalculadora = document.getElementById('p-calculadora')
-
 projetoCalculadora.addEventListener('click', function() {
     let mais = document.getElementById('projeto-calculadora')
     let close = document.getElementById('projeto-calculadora-close')
@@ -122,8 +107,6 @@ projetoCalculadora.addEventListener('click', function() {
 })
 
 // projeto lista
-var projetoLista = document.getElementById('p-lista')
-
 projetoLista.addEventListener('click', function() {
     let mais = document.getElementById('projeto-lista')
     let close = document.getElementById('projeto-lista-close')
@@ -136,10 +119,14 @@ projetoLista.addEventListener('click', function() {
 
 })
 
-// habilidades
-// HTML
+/* habilidades */
 var htmlClick = document.getElementById('html-box')
+var cssClick = document.getElementById('css-box')
+var jsClick = document.getElementById('js-box')
+var gitClick = document.getElementById('git-box')
+var gitHubClick = document.getElementById('github-box')
 
+// HTML
 htmlClick.addEventListener('mouseover', function() {
     let htmlSobre = document.getElementById('html-sobre')
 
@@ -151,8 +138,6 @@ htmlClick.addEventListener('mouseover', function() {
 })
 
 // CSS
-var cssClick = document.getElementById('css-box')
-
 cssClick.addEventListener('mouseover', function() {
     let cssSobre = document.getElementById('css-sobre')
 
@@ -164,8 +149,6 @@ cssClick.addEventListener('mouseover', function() {
 })
 
 // javaScript
-var jsClick = document.getElementById('js-box')
-
 jsClick.addEventListener('mouseover', function() {
     let jsSobre = document.getElementById('js-sobre')
 
@@ -177,8 +160,6 @@ jsClick.addEventListener('mouseover', function() {
 })
 
 // Git
-var gitClick = document.getElementById('git-box')
-
 gitClick.addEventListener('mouseover', function() {
     let gitSobre = document.getElementById('git-sobre')
 
@@ -190,8 +171,6 @@ gitClick.addEventListener('mouseover', function() {
 })
 
 // CSS
-var gitHubClick = document.getElementById('github-box')
-
 gitHubClick.addEventListener('mouseover', function() {
     let cssSobre = document.getElementById('github-sobre')
 
