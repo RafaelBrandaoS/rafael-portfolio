@@ -27,17 +27,21 @@ var projetoIdade = document.getElementById('p-idade')
 var projetoCalculadora = document.getElementById('p-calculadora')
 var projetoLista = document.getElementById('p-lista')
 
-// projeto android
-projetoAndroid.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-android')
-    let close = document.getElementById('projeto-android-close')
-
+// função de mostrar ou esconder os projetos
+function ativarDesativar(mais, close) {
     mais.classList.add('projeto-mais-ativo')
 
     close.addEventListener('click', function() {
         mais.classList.remove('projeto-mais-ativo')
     })
+}
 
+// projeto android
+projetoAndroid.addEventListener('click', function() {
+    let mais = document.getElementById('projeto-android')
+    let close = document.getElementById('projeto-android-close')
+    
+    ativarDesativar(mais, close)
 })
 
 // projeto cordel
@@ -45,12 +49,7 @@ projetoCordel.addEventListener('click', function() {
     let mais = document.getElementById('projeto-cordel')
     let close = document.getElementById('projeto-cordel-close')
 
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-
+    ativarDesativar(mais, close)
 })
 
 // projeto social
@@ -58,12 +57,7 @@ projetoSocial.addEventListener('click', function() {
     let mais = document.getElementById('projeto-social')
     let close = document.getElementById('projeto-social-close')
 
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-
+    ativarDesativar(mais, close)
 })
 
 // projeto hora
@@ -71,12 +65,7 @@ projetoHora.addEventListener('click', function() {
     let mais = document.getElementById('projeto-hora')
     let close = document.getElementById('projeto-hora-close')
 
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-
+    ativarDesativar(mais, close)
 })
 
 // projeto idade
@@ -84,12 +73,7 @@ projetoIdade.addEventListener('click', function() {
     let mais = document.getElementById('projeto-idade')
     let close = document.getElementById('projeto-idade-close')
 
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-
+    ativarDesativar(mais, close)
 })
 
 // projeto calculadora
@@ -97,12 +81,7 @@ projetoCalculadora.addEventListener('click', function() {
     let mais = document.getElementById('projeto-calculadora')
     let close = document.getElementById('projeto-calculadora-close')
 
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-
+    ativarDesativar(mais, close)
 })
 
 // projeto lista
@@ -110,12 +89,7 @@ projetoLista.addEventListener('click', function() {
     let mais = document.getElementById('projeto-lista')
     let close = document.getElementById('projeto-lista-close')
 
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-
+    ativarDesativar(mais, close)
 })
 
 /* habilidades */
@@ -125,57 +99,52 @@ var jsClick = document.getElementById('js-box')
 var gitClick = document.getElementById('git-box')
 var gitHubClick = document.getElementById('github-box')
 
+
+// função de mostrar e esconder as habilidades
+function habilidades(sobre, click) {
+    sobre.classList.add('habilidades-ativo')
+
+    click.addEventListener('mouseout', function() {
+        sobre.classList.remove('habilidades-ativo')
+    })
+}
+
 // HTML
 htmlClick.addEventListener('mouseover', function() {
-    let htmlSobre = document.getElementById('html-sobre')
+    let sobre = document.getElementById('html-sobre')
+    let click = htmlClick
 
-    htmlSobre.classList.add('habilidades-ativo')
-
-    htmlClick.addEventListener('mouseout', function() {
-        htmlSobre.classList.remove('habilidades-ativo')
-    })
+    habilidades(sobre, click)
 })
 
 // CSS
 cssClick.addEventListener('mouseover', function() {
-    let cssSobre = document.getElementById('css-sobre')
+    let sobre = document.getElementById('css-sobre')
+    let click = cssClick
 
-    cssSobre.classList.add('habilidades-ativo')
-
-    cssClick.addEventListener('mouseout', function() {
-        cssSobre.classList.remove('habilidades-ativo')
-    })
+    habilidades(sobre, click)
 })
 
 // javaScript
 jsClick.addEventListener('mouseover', function() {
-    let jsSobre = document.getElementById('js-sobre')
+    let sobre = document.getElementById('js-sobre')
+    let click = jsClick
 
-    jsSobre.classList.add('habilidades-ativo')
-
-    jsClick.addEventListener('mouseout', function() {
-        jsSobre.classList.remove('habilidades-ativo')
-    })
+    habilidades(sobre, click)
 })
 
 // Git
 gitClick.addEventListener('mouseover', function() {
-    let gitSobre = document.getElementById('git-sobre')
+    let sobre = document.getElementById('git-sobre')
+    let click = gitClick
 
-    gitSobre.classList.add('habilidades-ativo')
-
-    gitClick.addEventListener('mouseout', function() {
-        gitSobre.classList.remove('habilidades-ativo')
-    })
+    habilidades(sobre, click)
 })
 
 // CSS
 gitHubClick.addEventListener('mouseover', function() {
-    let cssSobre = document.getElementById('github-sobre')
+    let sobre = document.getElementById('github-sobre')
+    let click = gitHubClick
 
-    cssSobre.classList.add('habilidades-ativo')
-
-    gitHubClick.addEventListener('mouseout', function() {
-        cssSobre.classList.remove('habilidades-ativo')
-    })
+    habilidades(sobre, click)
 })
