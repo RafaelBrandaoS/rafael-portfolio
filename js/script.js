@@ -27,6 +27,7 @@ var projetoIdade = document.getElementById('p-idade')
 var projetoCalculadora = document.getElementById('p-calculadora')
 var projetoLista = document.getElementById('p-lista')
 
+
 // função de mostrar ou esconder os projetos
 function ativarDesativar(mais, close) {
     mais.classList.add('projeto-mais-ativo')
