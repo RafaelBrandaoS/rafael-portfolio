@@ -1,3 +1,24 @@
+/* animações */
+var item = document.querySelectorAll("[data-anima]")
+
+function animeScroll() {
+    let windowTop = window.pageYOffset + window.innerHeight * 0.8
+
+    item.forEach((element) => {
+        if(windowTop > element.offsetTop) {
+            element.classList.add("animate")
+        } else {
+            element.classList.remove("animate")
+        }
+    })
+}
+
+animeScroll()
+
+window.addEventListener("scroll", function() {
+    animeScroll()
+})
+
 /* menu */
 var menuBar = document.querySelector('#burguer')
 

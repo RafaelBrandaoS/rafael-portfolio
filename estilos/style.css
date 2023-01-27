@@ -52,6 +52,36 @@ section {
 }
 /* Gerais */
 
+/* animações */
+
+[data-anima] {
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anima="down"] {
+    transform: translate3d(0, -100%, 0);
+}
+
+[data-anima="up"] {
+    transform: translate3d(0, 100%, 0);
+}
+
+[data-anima="left"] {
+    transform: translate3d(-100%, 0, 0);
+}
+
+[data-anima="right"] {
+    transform: translate3d(100%, 0, 0);
+}
+
+[data-anima].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+/* animações */
+
 /* Cabeçalho */
 header.cabecalho {
     width: 100%;
@@ -266,12 +296,13 @@ section.projetos h2 {
     position: fixed;
     overflow: hidden;
     top: 50%;
-    transform: translateY(-45%);
+    left: 50%;
+    transform: translate(-45%, -50%);
     z-index: 2;
     padding: 20px;
     border-radius: 20px;
     width: 1000px;
-    transition: .3s;
+    transition: .2s;
     scale: 0;
     opacity: 0;
 }

@@ -30,7 +30,7 @@
         <!-- Início -->
         <section class="sessao" id="inicio">
             <div class="inicio-content">
-                <div class="inicio-txt">
+                <div class="inicio-txt" data-anima="left">
                     <p>Olá, me chamo</p>
                     <h2 class="meu-nome">Rafael <span class="nome-destaque">Brandão</span></h2>
                     <p>Desenvolvedor web <span class="nome-destaque">Front-end</span>.</p>
@@ -41,8 +41,8 @@
         <!-- Sobre Mim -->
         <section class="sessao" id="sobre">
                 <div class="sobre-content">
-                    <img src="imagens/programador.png">
-                    <div class="sobre-txt">
+                    <img src="imagens/programador.png" data-anima="up">
+                    <div class="sobre-txt" data-anima="right">
                         <h2>Sobre Mim</h2>
                         <p>Me chamo Rafael Brandão, tenho 17 anos e moro no Distrito Federal, Brasil. Desde criança eu sempre fui apaixonado por tecnologia, então decidi trilhar um caminho no ramo da programação. Infelizmente eu ainda não tenho experiências profissionais na área de desenvolvimento web, Mas estou focado em aprender as tecnologias do FrontEnd.</p>
                     </div>
@@ -52,12 +52,32 @@
         <!-- projetos pessoais -->
         <section class="sessao" id="projetos-m">
             <div class="projetos-content-m">
-                <h2>Projetos Pessoais</h2>
-                <div class="projetos-box-m">
-
-                    <div id="p-android" class="projetos-caixa-m">
-                        <img src="imagens/p-android-500.jpg">
+                <h2 data-anima="up">Projetos Pessoais</h2>
+                <div>
+                    <div class="projetos-box-m" data-anima="right">
+                        <div id="p-android" class="projetos-caixa-m">
+                            <img src="imagens/p-android-500.jpg">
+                        </div>
+                        <div id="p-cordel" class="projetos-caixa-m">
+                            <img src="imagens/p-cordel-500.jpg">
+                        </div>
+                        <div id="p-social" class="projetos-caixa-m">
+                            <img src="imagens/p-social-500.jpg">
+                        </div>
+                        <div id="p-hora" class="projetos-caixa-m">
+                            <img src="imagens/hora-dia-500.jpg">
+                        </div>
+                        <div id="p-idade" class="projetos-caixa-m">
+                            <img src="imagens/veificador-idade-500.jpg">
+                        </div>
+                        <div id="p-calculadora" class="projetos-caixa-m">
+                            <img src="imagens/calculadora-500.jpg">
+                        </div>
+                        <div id="p-lista" class="projetos-caixa-m">
+                            <img src="imagens/lista-de-tarefas-500.jpg">
+                        </div>
                     </div>
+
                     <div id="projeto-android" class="projeto-mais-container">
                         <h2>Projeto Android</h2>
                         <div id="android-mais" class="projeto-mais">
@@ -73,10 +93,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div id="p-cordel" class="projetos-caixa-m">
-                        <img src="imagens/p-cordel-500.jpg">
                     </div>
                     <div id="projeto-cordel" class="projeto-mais-container">
                         <h2>Cordel Moderno</h2>
@@ -94,10 +110,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div id="p-social" class="projetos-caixa-m">
-                        <img src="imagens/p-social-500.jpg">
-                    </div>
                     <div id="projeto-social" class="projeto-mais-container">
                         <h2>Projeto Redes Sociais</h2>
                         <div id="social-mais" class="projeto-mais">
@@ -113,10 +125,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div id="p-hora" class="projetos-caixa-m">
-                        <img src="imagens/hora-dia-500.jpg">
                     </div>
                     <div id="projeto-hora" class="projeto-mais-container">
                         <h2>Hora do Dia</h2>
@@ -134,10 +142,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div id="p-idade" class="projetos-caixa-m">
-                        <img src="imagens/veificador-idade-500.jpg">
-                    </div>
                     <div id="projeto-idade" class="projeto-mais-container">
                         <h2>Verificador de Idade</h2>
                         <div id="idade-mais" class="projeto-mais">
@@ -154,10 +158,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div id="p-calculadora" class="projetos-caixa-m">
-                        <img src="imagens/calculadora-500.jpg">
-                    </div>
                     <div id="projeto-calculadora" class="projeto-mais-container">
                         <h2>Calculadora</h2>
                         <div id="calculadora-mais" class="projeto-mais">
@@ -173,10 +173,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div id="p-lista" class="projetos-caixa-m">
-                        <img src="imagens/lista-de-tarefas-500.jpg">
                     </div>
                     <div id="projeto-lista" class="projeto-mais-container">
                         <h2>Lista de Tarefas</h2>
@@ -196,6 +192,7 @@
                         </div>
                     </div>
 
+
                 </div>
             </div>
         </section>
@@ -203,8 +200,8 @@
         <!-- Projetos profissionais -->
         <section class="sessao" id="projetos">
             <div class="projetos-content">
-                <h2>Projetos Profissionais </h2>
-                <div class="projetos-box">
+                <h2 data-anima="down">Projetos Profissionais </h2>
+                <div class="projetos-box" data-anima="left">
                     <div class="projetos-caixa">
                         <div class="caixa-breve">
                             <p>EM BREVE</p>
@@ -221,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="projetos-link">
+                <div class="projetos-link" data-anima="up">
                     <a href="http://github.com/rafaelbrandaos" target="_blank"><p>Meu Repositório no GitHub</p></a>
                 </div>
             </div>
@@ -230,8 +227,8 @@
         <!-- Habilidades -->
         <section class="sessao" id="habilidades">
             <div class="habilidades-content">
-                <h2>Habilidades</h2>
-                <div class="habilidades-container">
+                <h2 data-anima="up">Habilidades</h2>
+                <div class="habilidades-container" data-anima="up">
                     <div class="habilidades-box">
                         <div id="html-box" class="habilidades-caixa">
                             <img src="imagens/html5.png" alt="html-icon">
