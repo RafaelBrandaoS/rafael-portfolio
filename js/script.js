@@ -47,6 +47,7 @@ var projetoHora = document.getElementById('p-hora')
 var projetoIdade = document.getElementById('p-idade')
 var projetoCalculadora = document.getElementById('p-calculadora')
 var projetoLista = document.getElementById('p-lista')
+var projetoCronometro = document.getElementById('p-cronometro')
 
 
 // função de mostrar ou esconder os projetos
@@ -110,6 +111,14 @@ projetoCalculadora.addEventListener('click', function() {
 projetoLista.addEventListener('click', function() {
     let mais = document.getElementById('projeto-lista')
     let close = document.getElementById('projeto-lista-close')
+
+    ativarDesativar(mais, close)
+})
+
+// projeto cronômetro
+projetoCronometro.addEventListener('click', function() {
+    let mais = document.getElementById('projeto-cronometro')
+    let close = document.getElementById('projeto-cronometro-close')
 
     ativarDesativar(mais, close)
 })
