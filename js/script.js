@@ -40,98 +40,40 @@ menuBar.addEventListener('click', function() {
 })
 
 /* mostrar mais sobre projetos */
-var projetoAndroid = document.getElementById('p-android')
-var projetoCordel = document.getElementById('p-cordel')
-var projetoSocial = document.getElementById('p-social')
-var projetoHora = document.getElementById('p-hora')
-var projetoIdade = document.getElementById('p-idade')
-var projetoCalculadora = document.getElementById('p-calculadora')
-var projetoLista = document.getElementById('p-lista')
-var projetoCronometro = document.getElementById('p-cronometro')
+var projetos = [
+    {id: 'p-android', mais: 'projeto-android', close: 'projeto-android-close'},
+    {id: 'p-cordel', mais: 'projeto-cordel', close: 'projeto-cordel-close'},
+    {id: 'p-social', mais: 'projeto-social', close: 'projeto-social-close'},
+    {id: 'p-hora', mais: 'projeto-hora', close: 'projeto-hora-close'},
+    {id: 'p-idade', mais: 'projeto-idade', close: 'projeto-idade-close'},
+    {id: 'p-calculadora', mais: 'projeto-calculadora', close: 'projeto-calculadora-close'},
+    {id: 'p-lista', mais: 'projeto-lista', close: 'projeto-lista-close'},
+    {id: 'p-cronometro', mais: 'projeto-cronometro', close: 'projeto-cronometro-close'}
+]
 
-
-// função de mostrar ou esconder os projetos
-function ativarDesativar(mais, close) {
-    mais.classList.add('projeto-mais-ativo')
-
-    close.addEventListener('click', function() {
-        mais.classList.remove('projeto-mais-ativo')
-    })
-}
-
-// projeto android
-projetoAndroid.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-android')
-    let close = document.getElementById('projeto-android-close')
+projetos.forEach(function(projeto) {
+    let btnProjeto = document.getElementById(projeto.id)
+    let mais = document.getElementById(projeto.mais)
+    let close = document.getElementById(projeto.close)
     
-    ativarDesativar(mais, close)
-})
+    btnProjeto.addEventListener('click', function() {
+        mais.classList.add('projeto-mais-ativo')
 
-// projeto cordel
-projetoCordel.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-cordel')
-    let close = document.getElementById('projeto-cordel-close')
-
-    ativarDesativar(mais, close)
-})
-
-// projeto social
-projetoSocial.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-social')
-    let close = document.getElementById('projeto-social-close')
-
-    ativarDesativar(mais, close)
-})
-
-// projeto hora
-projetoHora.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-hora')
-    let close = document.getElementById('projeto-hora-close')
-
-    ativarDesativar(mais, close)
-})
-
-// projeto idade
-projetoIdade.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-idade')
-    let close = document.getElementById('projeto-idade-close')
-
-    ativarDesativar(mais, close)
-})
-
-// projeto calculadora
-projetoCalculadora.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-calculadora')
-    let close = document.getElementById('projeto-calculadora-close')
-
-    ativarDesativar(mais, close)
-})
-
-// projeto lista
-projetoLista.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-lista')
-    let close = document.getElementById('projeto-lista-close')
-
-    ativarDesativar(mais, close)
-})
-
-// projeto cronômetro
-projetoCronometro.addEventListener('click', function() {
-    let mais = document.getElementById('projeto-cronometro')
-    let close = document.getElementById('projeto-cronometro-close')
-
-    ativarDesativar(mais, close)
+        close.addEventListener('click', function() {
+            mais.classList.remove('projeto-mais-ativo')
+        })
+    })
 })
 
 /* habilidades */
-var htmlClick = document.getElementById('html-box')
-var cssClick = document.getElementById('css-box')
-var jsClick = document.getElementById('js-box')
-var gitClick = document.getElementById('git-box')
-var gitHubClick = document.getElementById('github-box')
+var elements = [
+    {id: 'html-box', sobre: 'html-sobre'},
+    {id: 'css-box', sobre: 'css-sobre'},
+    {id: 'js-box', sobre: 'js-sobre'},
+    {id: 'git-box', sobre: 'git-sobre'},
+    {id: 'github-box', sobre: 'github-sobre'},
+]
 
-
-// função de mostrar e esconder as habilidades
 function habilidades(sobre, click) {
     sobre.classList.add('habilidades-ativo')
 
@@ -140,42 +82,11 @@ function habilidades(sobre, click) {
     })
 }
 
-// HTML
-htmlClick.addEventListener('mouseover', function() {
-    let sobre = document.getElementById('html-sobre')
-    let click = htmlClick
+elements.forEach(function(elem) {
+    let click = document.getElementById(elem.id)
+    let sobre = document.getElementById(elem.sobre)
 
-    habilidades(sobre, click)
-})
-
-// CSS
-cssClick.addEventListener('mouseover', function() {
-    let sobre = document.getElementById('css-sobre')
-    let click = cssClick
-
-    habilidades(sobre, click)
-})
-
-// javaScript
-jsClick.addEventListener('mouseover', function() {
-    let sobre = document.getElementById('js-sobre')
-    let click = jsClick
-
-    habilidades(sobre, click)
-})
-
-// Git
-gitClick.addEventListener('mouseover', function() {
-    let sobre = document.getElementById('git-sobre')
-    let click = gitClick
-
-    habilidades(sobre, click)
-})
-
-// CSS
-gitHubClick.addEventListener('mouseover', function() {
-    let sobre = document.getElementById('github-sobre')
-    let click = gitHubClick
-
-    habilidades(sobre, click)
+    click.addEventListener('mouseover', function() {
+        habilidades(sobre, click)
+    })
 })
