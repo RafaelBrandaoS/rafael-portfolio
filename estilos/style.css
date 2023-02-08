@@ -4,8 +4,14 @@
 
 /* font-family: 'Roboto', sans-serif; normal */
 /* font-family: 'Passion One', cursive; destaque */
-/* amarelo: #F5CC27 */
-/* azul:    #2C48A8 */
+
+/* 
+    --main-color: #F5CC27;
+    --bg-color1: #ffffff;
+    --bg-color2: #000000;
+    --color1: #ffffff;
+    --color2: #000000;
+*/
 
 /* Gerais */
 * {
@@ -15,13 +21,13 @@
     text-decoration: none;
 }
 
+
 :root {
     --main-color: #F5CC27;
-    --secundary-color: #2C48A8;
     --bg-color1: #ffffff;
     --bg-color2: #000000;
-    --text-color1: #ffffff;
-    --text-color2: #000000;
+    --color1: #ffffff;
+    --color2: #000000;
 }
 
 html {
@@ -31,24 +37,24 @@ html {
 
 body {
     font-size: 100%;
-    color: white;
+    color: var(--color1);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Passion One', cursive;
-    color: black;
+    color: var(--color2);
 }
 
 p {
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: var(--color2);
 }
 
 section {
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
-    border-top: 2px solid #000000;
+    border-top: 2px solid var(--color2);
 }
 /* Gerais */
 
@@ -96,9 +102,9 @@ header.cabecalho {
 }
 
 .cabecalho-content {
-    background-color: #000000;
+    background-color: var(--bg-color2);
     border-bottom: 2px solid var(--main-color);
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+    box-shadow: 1px 1px 2px #0000005e;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -119,7 +125,7 @@ header.cabecalho {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: var(--color1);
     position: relative;
 }
 
@@ -162,7 +168,7 @@ header.cabecalho {
 }
 
 .inicio-txt > h2 {
-    color: black;
+    color: var(--color2);
     font-weight: 700;
     font-size: 5em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
@@ -170,7 +176,7 @@ header.cabecalho {
 
 .inicio-txt p {
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: var(--color2);
     font-weight: 400;
     font-size: 1.5em;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
@@ -202,7 +208,7 @@ header.cabecalho {
 }
 
 .sobre-txt {
-    background-color: #000000;
+    background-color: var(--bg-color2);
     max-width: 600px;
     padding: 30px;
     border-radius: 10px;
@@ -221,7 +227,7 @@ header.cabecalho {
     font-size: 30px;
     text-indent: 60px;
     text-align: justify;
-    color: #ffffff;
+    color: var(--color1);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 /* Sobre */
@@ -237,7 +243,7 @@ section.projetos {
 }
 
 section.projetos h2 {
-    border-top: 2px solid black;
+    border-top: 2px solid var(--color2);
     padding-top: 30px;
 }
 
@@ -270,7 +276,7 @@ section.projetos h2 {
 }
 
 .projetos-caixa, .projetos-caixa-m {
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     height: 180px;
     width: 320px;
     border-radius: 20px;
@@ -292,7 +298,7 @@ section.projetos h2 {
 }
 
 .projeto-mais-container {
-    background-color: #000000e1;
+    background-color: var(--bg-color2);
     position: fixed;
     overflow: hidden;
     top: 50%;
@@ -334,18 +340,14 @@ section.projetos h2 {
     cursor: pointer;
 }
 
-.projeto-mais h2 {
-    color: #2C48A8;
-}
-
 .projeto-mais img {
     width: 600px;
     border-radius: 10px;
-    border: 2px solid #fff;
+    border: 2px solid var(--color1);
 }
 
 .projeto-mais-txt {
-    background-color: #fff;
+    background-color: var(--bg-color1);
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -363,7 +365,7 @@ section.projetos h2 {
     text-align: center;
     padding: 10px;
     border-radius: 50px;
-    background: #000000;
+    background: var(--bg-color2);
     transition: .2s;
 }
 
@@ -378,14 +380,14 @@ section.projetos h2 {
 }
 
 .projeto-mais-link div a {
-    color: #fff;
+    color: var(--color1);
     font-size: 18px;
     text-align: center;
     font-family:'Roboto', sans-serif;
 }
 
 .caixa-breve {
-    background-color: #000000;
+    background-color: var(--bg-color2);
     width: 500px;
     text-align: center;
     padding: 5% 0;
@@ -409,8 +411,8 @@ section.projetos h2 {
     transition: .2s;
 }
 
-.projetos-link p {
-    color: var(--text-color1);
+.projetos-link a {
+    color: var(--color1);
     font-size: 1.2em;
     text-align: center;
     font-family:'Roboto', sans-serif;
@@ -446,10 +448,10 @@ section.projetos h2 {
 }
 
 .habilidades-caixa {
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
-    border: 1px solid #000000;
+    border: 1px solid var(--color2);
     transition: 0.3s;
     cursor: pointer;
     width: 130px;
@@ -473,13 +475,13 @@ section.projetos h2 {
 }
 
 .habilidades-caixa > h3 {
-    color: #000000;
+    color: var(--color2);
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-weight: 400;
     font-size: 25px;
     padding: 5px;
-    border-top: 1px solid #000000;
+    border-top: 1px solid var(--color2);
 }
 
 .habilidades-container {
@@ -499,7 +501,7 @@ section.projetos h2 {
 }
 
 .habilidades-sobre-caixa {
-    background: #000;
+    background: var(--bg-color2);
     padding: 30px;
     border-radius: 20px;
     opacity: 0;
@@ -513,12 +515,12 @@ section.projetos h2 {
 }
 
 .habilidades-sobre-caixa h3 {
-    color: #F5CC27;
+    color: var(--main-color);
     font-size: 2.8em;
 }
 
 .habilidades-sobre-caixa p {
-    color: #fff;
+    color: var(--color1);
     font-size: 1.5em;
 }
 /* Habilidades */
@@ -526,9 +528,9 @@ section.projetos h2 {
 /* Footer */
 
 footer {
-    background-color: #000000;
+    background-color: var(--bg-color2);
     width: 100%;
-    box-shadow: -2px 0px 3px rgb(0, 0, 0);
+    box-shadow: -2px 0px 3px #000000;
     border-top: 2px solid var(--main-color);
     padding-top: 5px;
 }
@@ -548,13 +550,13 @@ footer {
 }
 
 footer p {
-    color: #ffffff;
+    color: var(--color1);
     font-size: 20px;
     font-weight: 400;
 }
 
 footer img {
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     padding: 7px;
     border-radius: 10px;
     border: 1px solid #2C48A8;
