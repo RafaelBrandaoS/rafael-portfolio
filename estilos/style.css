@@ -224,7 +224,7 @@ header.cabecalho {
 }
 
 .sobre-txt > p {
-    font-size: 30px;
+    font-size: 23px;
     text-indent: 60px;
     text-align: justify;
     color: var(--color1);
