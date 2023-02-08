@@ -66,15 +66,15 @@ section {
 }
 
 [data-anima="down"] {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -50px, 0);
 }
 
 [data-anima="up"] {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 50px, 0);
 }
 
 [data-anima="left"] {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-30px, 0, 0);
 }
 
 [data-anima="right"] {
