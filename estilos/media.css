@@ -6,8 +6,8 @@
         right: 0;
         font-size: 25px;
         display: block;
-        background-color: #F5CC27;
-        color: black;
+        background-color: #0A66C2;
+        color: #000;
         margin: 20px;
         padding: 10px;
         border-radius: 8px;
@@ -15,7 +15,7 @@
     }
 
     .cabecalho-menu {
-        background-color: #000;
+        background-color: #fff;
         flex-direction: column;
         position: absolute;
         top: 91px;
@@ -24,6 +24,7 @@
         padding: 30px 40px;
         border-radius: 0px 0px 20px 20px;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+        border: 1px solid #000;
         transition: .8s;
     }
 

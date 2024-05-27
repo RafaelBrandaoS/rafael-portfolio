@@ -41,14 +41,10 @@ menuBar.addEventListener('click', function() {
 
 /* mostrar mais sobre projetos */
 var projetos = [
-    {id: 'p-android', mais: 'projeto-android', close: 'projeto-android-close'},
-    {id: 'p-cordel', mais: 'projeto-cordel', close: 'projeto-cordel-close'},
-    {id: 'p-social', mais: 'projeto-social', close: 'projeto-social-close'},
-    {id: 'p-hora', mais: 'projeto-hora', close: 'projeto-hora-close'},
-    {id: 'p-idade', mais: 'projeto-idade', close: 'projeto-idade-close'},
     {id: 'p-calculadora', mais: 'projeto-calculadora', close: 'projeto-calculadora-close'},
     {id: 'p-lista', mais: 'projeto-lista', close: 'projeto-lista-close'},
-    {id: 'p-cronometro', mais: 'projeto-cronometro', close: 'projeto-cronometro-close'}
+    {id: 'p-cronometro', mais: 'projeto-cronometro', close: 'projeto-cronometro-close'},
+    {id: 'j-dino', mais: 'jogo-dino', close: 'jogo-dino-close'}
 ]
 
 projetos.forEach(function(projeto) {
@@ -70,6 +66,8 @@ var elements = [
     {id: 'html-box', sobre: 'html-sobre'},
     {id: 'css-box', sobre: 'css-sobre'},
     {id: 'js-box', sobre: 'js-sobre'},
+    {id: 'py-box', sobre: 'py-sobre'},
+    {id: 'mysql-box', sobre: 'mysql-sobre'},
     {id: 'git-box', sobre: 'git-sobre'},
     {id: 'github-box', sobre: 'github-sobre'},
 ]

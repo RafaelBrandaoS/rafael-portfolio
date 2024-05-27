@@ -23,7 +23,7 @@
 
 
 :root {
-    --main-color: #F5CC27;
+    --main-color: #0A66C2;
     --bg-color1: #ffffff;
     --bg-color2: #000000;
     --color1: #ffffff;
@@ -42,12 +42,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Passion One', cursive;
-    color: var(--color2);
+    color: var(--color1);
 }
 
 p, a {
     font-family: 'Roboto', sans-serif;
-    color: var(--color2);
+    color: var(--color1);
 }
 
 section {
@@ -102,14 +102,12 @@ header.cabecalho {
 }
 
 .cabecalho-content {
-    background-color: var(--bg-color2);
-    border-bottom: 2px solid var(--main-color);
-    box-shadow: 1px 1px 2px #0000005e;
-    margin: 0 auto;
+    background-color: var(--color1);
+    border-bottom: 2px solid var(--color2);
+    padding: 20px 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-around;
+    box-shadow: 2px 0px 2px #000000;
 }
 
 .cabecalho .cabecalho-img, nav {
@@ -125,7 +123,10 @@ header.cabecalho {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: var(--color1);
+    color: var(--color2);
+    background-color: #0a66c231;
+    padding: 0px 10px;
+    border-radius: 10px;
     position: relative;
 }
 
@@ -208,11 +209,12 @@ header.cabecalho {
 }
 
 .sobre-txt {
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color1);
     max-width: 600px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.452);
+    border: 1px solid, black;
 }
 
 .sobre-txt > h2 {
@@ -227,7 +229,7 @@ header.cabecalho {
     font-size: 23px;
     text-indent: 60px;
     text-align: justify;
-    color: var(--color1);
+    color: var(--color2);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 /* Sobre */
@@ -354,7 +356,7 @@ section.projetos h2 {
     flex-direction: column;
     justify-content: space-between;
 }
- 
+
 .projeto-mais-link {
     display: flex;
     justify-content: space-around;
@@ -377,6 +379,7 @@ section.projetos h2 {
     font-size: 1.5em;
     text-align: justify;
     font-family:'Roboto', sans-serif;
+    color: var(--bg-color2);
 }
 
 .projeto-mais-link div a {
@@ -501,7 +504,9 @@ section.projetos h2 {
 }
 
 .habilidades-sobre-caixa {
-    background: var(--bg-color2);
+    background: var(--bg-color1);
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.452);
     padding: 30px;
     border-radius: 20px;
     opacity: 0;
@@ -520,7 +525,7 @@ section.projetos h2 {
 }
 
 .habilidades-sobre-caixa p {
-    color: var(--color1);
+    color: var(--color2);
     font-size: 1.5em;
 }
 /* Habilidades */
@@ -528,11 +533,10 @@ section.projetos h2 {
 /* Footer */
 
 footer {
-    background-color: var(--bg-color2);
+    background-color: var(--bg-color1);
     width: 100%;
     box-shadow: -2px 0px 3px #000000;
-    border-top: 2px solid var(--main-color);
-    padding-top: 5px;
+    border-top: 2px solid var(--color2);
 }
 
 .footer {
@@ -550,7 +554,7 @@ footer {
 }
 
 footer p {
-    color: var(--color1);
+    color: var(--color2);
     font-size: 20px;
     font-weight: 400;
 }
@@ -559,7 +563,7 @@ footer img {
     background-color: var(--bg-color1);
     padding: 7px;
     border-radius: 10px;
-    border: 1px solid #2C48A8;
+    border: 1px solid var(--color2);
     transition: 0.8s;
 }
 
