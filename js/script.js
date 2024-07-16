@@ -44,7 +44,8 @@ var projetos = [
     {id: 'p-calculadora', mais: 'projeto-calculadora', close: 'projeto-calculadora-close'},
     {id: 'p-lista', mais: 'projeto-lista', close: 'projeto-lista-close'},
     {id: 'p-cronometro', mais: 'projeto-cronometro', close: 'projeto-cronometro-close'},
-    {id: 'j-dino', mais: 'jogo-dino', close: 'jogo-dino-close'}
+    {id: 'j-dino', mais: 'jogo-dino', close: 'jogo-dino-close'},
+    {id: 'p-cardapio', mais: 'projeto-cardapio', close: 'cardapio-close'}
 ]
 
 projetos.forEach(function(projeto) {
