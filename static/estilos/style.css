@@ -158,14 +158,13 @@ header.cabecalho {
 
 /* Início */
 #inicio {
-    height: 100vh;
     position: relative;
 }
 
 .inicio-txt {
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 10%;
 }
 
 .inicio-txt > h2 {
@@ -237,7 +236,6 @@ header.cabecalho {
 /* Projetos */
 #projetos, #projetos-m {
     padding: 30px;
-    min-height: 100vh;
 }
 
 section.projetos {
@@ -262,7 +260,7 @@ section.projetos h2 {
 .projetos-content > h2, .projetos-content-m > h2 {
     font-family:  'Passion One', cursive;
     text-align: center;
-    font-size: 70px;
+    font-size: 50px;
     color: var(--main-color);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
@@ -279,8 +277,8 @@ section.projetos h2 {
 
 .projetos-caixa, .projetos-caixa-m {
     background-color: var(--bg-color1);
-    height: 180px;
     width: 320px;
+    height: 80%;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -446,8 +444,8 @@ section.projetos h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 50px;
-    width: 50%;
+    gap: 20px;
+    width: 60%;
 }
 
 .habilidades-caixa {

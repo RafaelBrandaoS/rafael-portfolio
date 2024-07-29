@@ -62,31 +62,3 @@ projetos.forEach(function(projeto) {
         })
     })
 })
-
-/* habilidades */
-var elements = [
-    {id: 'html-box', sobre: 'html-sobre'},
-    {id: 'css-box', sobre: 'css-sobre'},
-    {id: 'js-box', sobre: 'js-sobre'},
-    {id: 'py-box', sobre: 'py-sobre'},
-    {id: 'mysql-box', sobre: 'mysql-sobre'},
-    {id: 'git-box', sobre: 'git-sobre'},
-    {id: 'github-box', sobre: 'github-sobre'},
-]
-
-function habilidades(sobre, click) {
-    sobre.classList.add('habilidades-ativo')
-
-    click.addEventListener('mouseout', function() {
-        sobre.classList.remove('habilidades-ativo')
-    })
-}
-
-elements.forEach(function(elem) {
-    let click = document.getElementById(elem.id)
-    let sobre = document.getElementById(elem.sobre)
-
-    click.addEventListener('mouseover', function() {
-        habilidades(sobre, click)
-    })
-})

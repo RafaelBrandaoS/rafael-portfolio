@@ -1,0 +1,15 @@
+
+<div id="projeto-{{ projeto[1] }}" class="projeto-mais-container">
+    <h2>{{ projeto[1] }}</h2>
+    <div id="cardapio-mais" class="projeto-mais">
+        <i id="cardapio-close" class="material-symbols-outlined">close</i>
+        <a href="https://faelbar-cardapio-production.up.railway.app/" target="_blank"><img src="imagens/cardapio-800.jpg"></a>
+        <div class="projeto-mais-txt">
+            <p>{{ projeto[4] }}</p>
+            <div class="projeto-mais-link">
+                <div><a href="https://faelbar-cardapio-production.up.railway.app/" target="_blank">Ver Projeto</a></div>
+                <div><a href="https://github.com/RafaelBrandaoS/FaelBar-Cardapio" target="_blank">Ver Códigos</a></div>
+            </div>
+        </div>
+    </div>
+</div>

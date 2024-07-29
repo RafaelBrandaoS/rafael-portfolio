@@ -1,5 +1,8 @@
 @media screen and (max-width: 768px) {
-    
+    section {
+        min-height: 80vh;
+    }
+
     .cabecalho > i {
         position: fixed;
         z-index: 2;
@@ -76,11 +79,11 @@
     }
 
     .projetos-caixa, .projetos-caixa-m {
-        width: 220px;
-        height: 120px;
+        width: 150px;
+        height: 100%;
     }
 
-    .projetos h2, .projetos-m h2, .habilidades h2 {
+    .sessao h2 {
         font-size: 3em;
     }
 
@@ -121,6 +124,10 @@
         font-size: .8em;
     }
 
+    .habilidades-box {
+        width: 100%;
+    }
+
     .habilidades-caixa {
         width: 100px;
     }
@@ -134,7 +141,7 @@
     }
 
     .habilidades-container {
-        gap: 10px;
+        gap: 5px;
     }
 
     .habilidades-sobre-explica {
