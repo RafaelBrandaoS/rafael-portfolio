@@ -27,103 +27,116 @@
 
     <main class="conteudo">
 
-        <!-- Início -->
-        <section class="sessao" id="inicio">
-            <div class="inicio-content">
-                <div class="inicio-txt" data-anima="left">
-                    <p>Olá, me chamo</p>
-                    <h2 class="meu-nome">RAFAEL <span class="nome-destaque">BRANDÃO</span></h2>
-                    <p>PROGRAMADOR FULLSTACK <span class="nome-destaque">PYTHON</span>.</p>
+    <!-- Início -->
+    <section class="sessao" id="inicio">
+        <div class="inicio-content">
+            <div class="inicio-txt" data-anima="left">
+                <p>Olá, me chamo</p>
+                <h2 class="meu-nome">RAFAEL <span class="nome-destaque">BRANDÃO</span></h2>
+                <p>PROGRAMADOR FULLSTACK <span class="nome-destaque">PYTHON</span>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Mim -->
+    <section class="sessao" id="sobre">
+            <div class="sobre-content">
+                <img src="{{ url_for('static', filename='imagens/programador.png') }}" data-anima="up">
+                <div class="sobre-txt" data-anima="right">
+                    <h2>Sobre Mim</h2>
+                    <p>Olá! Me chamo Rafael, sou um programador apaixonado pela arte de transformar ideias em soluções eficientes e práticas. Tenho experiência sólida em programação com a linguagem Python, que utilizo para desenvolver desde pequenos scripts até complexos sistemas de automação. <br>
+                    Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e contribuir para projetos inovadores. Se você está procurando um programador dedicado e detalhista, vamos conversar!
+                    </p>
                 </div>
             </div>
-        </section>
+    </section>
 
-        <!-- Sobre Mim -->
-        <section class="sessao" id="sobre">
-                <div class="sobre-content">
-                    <img src="{{ url_for('static', filename='imagens/programador.png') }}" data-anima="up">
-                    <div class="sobre-txt" data-anima="right">
-                        <h2>Sobre Mim</h2>
-                        <p>Olá! Me chamo Rafael, sou um programador apaixonado pela arte de transformar ideias em soluções eficientes e práticas. Tenho experiência sólida em programação com a linguagem Python, que utilizo para desenvolver desde pequenos scripts até complexos sistemas de automação. <br>
-                        Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e contribuir para projetos inovadores. Se você está procurando um programador dedicado e detalhista, vamos conversar!
-                        </p>
-                    </div>
-                </div>
-        </section>
-
-        <!-- projetos pessoais -->
-        <section class="sessao" id="projetos-m">
-            <div class="projetos-content-m">
-                <h2 data-anima="up">Projetos Pessoais</h2>
-                <div>
-                    <div class="projetos-box-m" data-anima="right">
-                        {% for projeto in pessoais %}
-                        <div id="p-{{ projeto[1] }}" class="projetos-caixa-m">
-                            <p class="id" style="display: none;">{{ projeto[0] }}</p>
-                            <img src="{{ url_for('static', filename=projeto[3]) }}">
+    <!-- projetos pessoais -->
+    <section class="sessao" id="projetos-m">
+        <div class="projetos-content-m">
+            <h2 data-anima="up">Projetos Pessoais</h2>
+            <div>
+                <div class="projetos-box-m" data-anima="right">
+                    {% for projeto in pessoais %}
+                    <div class="projetos-caixa-m">
+                        <div class="dados-projeto" style="display: none;">
+                            <span class="dado-nome">{{ projeto[1] }}</span>
+                            <span class="dado-img">{{ projeto[3] }}</span>
+                            <span class="dado-desc">{{ projeto[4] }}</span>
+                            <span class="dado-codigo">{{ projeto[5] }}</span>
+                            <span class="dado-projeto">{{ projeto[6] }}</span>
                         </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projetos profissionais -->
-        <section class="sessao" id="projetos">
-            <div class="projetos-content">
-                <h2 data-anima="down">Projetos Profissionais </h2>
-                <div class="projetos-box" data-anima="left">
-                    {% for projeto in profissionais %}
-                    <div id="p-fatia-pizzaria" class="projetos-caixa-m">
-                        <p class="id" style="display: none;">{{ projeto[0] }}</p>
                         <img src="{{ url_for('static', filename=projeto[3]) }}">
                     </div>
                     {% endfor %}
                 </div>
-                <div class="projetos-link" data-anima="up">
-                    <a href="http://github.com/rafaelbrandaos" target="_blank">Meu Repositório no GitHub</a>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Habilidades -->
-        <section class="sessao" id="habilidades">
-            <div class="habilidades-content">
-                <h2 data-anima="up">Habilidades</h2>
-                <div class="habilidades-container" data-anima="up">
-                    <div class="habilidades-box">
-                        <div id="html-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/html5.png') }}" alt="html-icon">
-                            <h3>HTML</h3>
-                        </div>
-                        <div id="css-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/css-3.png') }}" alt="css-icon">
-                            <h3>CSS</h3>
-                        </div>
-                        <div id="js-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/js.png') }}" alt="js-icon">
-                            <h3>JavaScript</h3>
-                        </div>
-                        <div id="py-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/python.png') }}" alt="python-icon">
-                            <h3>Python</h3>
-                        </div>
-                        <div id="mysql-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/mysql.png') }}" alt="mysql-icon">
-                            <h3>MySql</h3>
-                        </div>
-                        <div id="git-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/git.png') }}" alt="git-icon">
-                            <h3>Git</h3>
-                        </div>
-                        <div id="github-box" class="habilidades-caixa">
-                            <img src="{{ url_for('static', filename='imagens/github.png') }}" alt="github-icon">
-                            <h3>GitHub</h3>
-                        </div>
+    <!-- Projetos profissionais -->
+    <section class="sessao" id="projetos">
+        <div class="projetos-content">
+            <h2 data-anima="down">Projetos Profissionais </h2>
+            <div class="projetos-box" data-anima="left">
+                {% for projeto in profissionais %}
+                <div class="projetos-caixa-m">
+                    <div class="dados-projeto" style="display: none;">
+                        <span class="dado-nome">{{ projeto[1] }}</span>
+                        <span class="dado-img">{{ projeto[3] }}</span>
+                        <span class="dado-desc">{{ projeto[4] }}</span>
+                        <span class="dado-codigo">{{ projeto[5] }}</span>
+                        <span class="dado-projeto">{{ projeto[6] }}</span>
+                    </div>
+                    <img src="{{ url_for('static', filename=projeto[3]) }}">
+                </div>
+                {% endfor %}
+            </div>
+            <div class="projetos-link" data-anima="up">
+                <a href="http://github.com/rafaelbrandaos" target="_blank">Meu Repositório no GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="sessao" id="habilidades">
+        <div class="habilidades-content">
+            <h2 data-anima="up">Habilidades</h2>
+            <div class="habilidades-container" data-anima="up">
+                <div class="habilidades-box">
+                    <div id="html-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/html5.png') }}" alt="html-icon">
+                        <h3>HTML</h3>
+                    </div>
+                    <div id="css-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/css-3.png') }}" alt="css-icon">
+                        <h3>CSS</h3>
+                    </div>
+                    <div id="js-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/js.png') }}" alt="js-icon">
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div id="py-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/python.png') }}" alt="python-icon">
+                        <h3>Python</h3>
+                    </div>
+                    <div id="mysql-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/mysql.png') }}" alt="mysql-icon">
+                        <h3>MySql</h3>
+                    </div>
+                    <div id="git-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/git.png') }}" alt="git-icon">
+                        <h3>Git</h3>
+                    </div>
+                    <div id="github-box" class="habilidades-caixa">
+                        <img src="{{ url_for('static', filename='imagens/github.png') }}" alt="github-icon">
+                        <h3>GitHub</h3>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer -->
