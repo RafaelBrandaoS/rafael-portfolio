@@ -431,6 +431,14 @@ section.projetos h2 {
     margin: 0 auto;
 }
 
+.habilidades-content > h2 {
+    font-family:  'Passion One', cursive;
+    text-align: center;
+    font-size: 50px;
+    color: var(--main-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+}
+
 .habilidades-box {
     margin: 0 auto;
     display: flex;

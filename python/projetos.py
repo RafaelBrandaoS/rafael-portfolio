@@ -14,7 +14,7 @@ def listaProjetosPessoais():
 def listaProjetosProfissionais():
     con = criar_conexao()
     cursor = con.cursor()
-    sql = "select * from projetos where sessao = 'profissionais'"
+    sql = "select * from projetos where sessao = 'profissionais' order by id desc"
     cursor.execute(sql)
     projetosProfissionais = cursor.fetchall()
     cursor.close()

@@ -28,7 +28,7 @@
             <nav class="cabecalho-menu">
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre mim</a>
-                <a href="#projetos-m">Projetos</a>
+                <a href="#projetos">Projetos</a>
                 <a href="#habilidades">Habilidades</a>
             </nav>
         </div>
@@ -60,29 +60,6 @@
             </div>
     </section>
 
-    <!-- projetos pessoais -->
-    <section class="sessao" id="projetos-m">
-        <div class="projetos-content-m">
-            <h2 data-anima="up">Projetos Pessoais</h2>
-            <div>
-                <div class="projetos-box-m" data-anima="right">
-                    {% for projeto in pessoais %}
-                    <div class="projetos-caixa-m">
-                        <div class="dados-projeto" style="display: none;">
-                            <span class="dado-nome">{{ projeto[1] }}</span>
-                            <span class="dado-img">{{ projeto[3] }}</span>
-                            <span class="dado-desc">{{ projeto[4] }}</span>
-                            <span class="dado-codigo">{{ projeto[5] }}</span>
-                            <span class="dado-projeto">{{ projeto[6] }}</span>
-                        </div>
-                        <img src="{{ url_for('static', filename=projeto[3]) }}">
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projetos profissionais -->
     <section class="sessao" id="projetos">
         <div class="projetos-content">
@@ -107,10 +84,33 @@
         </div>
     </section>
 
+    <!-- projetos pessoais -->
+    <section class="sessao" id="projetos-m">
+        <div class="projetos-content-m">
+            <h2 data-anima="up">Projetos Pessoais</h2>
+            <div>
+                <div class="projetos-box-m" data-anima="right">
+                    {% for projeto in pessoais %}
+                    <div class="projetos-caixa-m">
+                        <div class="dados-projeto" style="display: none;">
+                            <span class="dado-nome">{{ projeto[1] }}</span>
+                            <span class="dado-img">{{ projeto[3] }}</span>
+                            <span class="dado-desc">{{ projeto[4] }}</span>
+                            <span class="dado-codigo">{{ projeto[5] }}</span>
+                            <span class="dado-projeto">{{ projeto[6] }}</span>
+                        </div>
+                        <img src="{{ url_for('static', filename=projeto[3]) }}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Habilidades -->
     <section class="sessao" id="habilidades">
         <div class="habilidades-content">
-            <h2 data-anima="up">Habilidades</h2>
+            <h2 data-anima="down">Habilidades </h2>
             <div class="habilidades-container" data-anima="up">
                 <div class="habilidades-box">
                     <div id="html-box" class="habilidades-caixa">
