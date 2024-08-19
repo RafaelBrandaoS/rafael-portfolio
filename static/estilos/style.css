@@ -303,7 +303,7 @@ section.projetos h2 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0px 0px 8px #0a66c29e;
+    box-shadow: 0px 0px 8px #0a66c25c;
     transition: 0.2s;
 }
 
@@ -313,7 +313,7 @@ section.projetos h2 {
 
 .projetos-caixa:hover, .projetos-caixa-m:hover {
     transform: scale(1.01) translateY(-3px);
-    box-shadow: 0px 0px 6px #0a66c29e;
+    box-shadow: 0px 0px 6px #0a66c25c;
 
 }
 
@@ -377,6 +377,7 @@ section.projetos h2 {
     font-size: 2em;
     text-align: center;
     color: var(--main-color);
+    margin-bottom: 10px;
 }
 
 #fexar {
@@ -426,13 +427,13 @@ section.projetos h2 {
     width: 40%;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 0px 8px #0a66c27a;
+    box-shadow: 0px 0px 5px #0a66c25c;
     cursor: pointer;
 }
 
 .detalhes-btns > a:hover {
     transform: scale(1.05);
-    box-shadow: 0px 0px 6px #0a66c27a;
+    box-shadow: 0px 0px 4px #0a66c25c;
 }
 
 /* Projetos */
@@ -443,13 +444,13 @@ section.projetos h2 {
 }
 
 .habilidades-content {
-    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 60px;
+    gap: 120px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .habilidades-content > h2 {
@@ -463,19 +464,33 @@ section.projetos h2 {
 .habilidades-box {
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
     gap: 20px;
-    width: 60%;
+    width: 100vw;
+    padding: 10px;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+@keyframes carrosel {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-810%);
+    }
 }
 
 .habilidades-caixa {
     background-color: var(--bg-color1);
     border-radius: 20px;
-    box-shadow: 0px 0px 8px #0a66c29e;
+    box-shadow: 0px 0px 5px #0a66c29e;
     transition: 0.3s;
     cursor: pointer;
     width: 130px;
+    min-width: 130px;
+    animation: carrosel 8s linear infinite;
 }
 
 .habilidades-caixa > img {
@@ -494,7 +509,7 @@ section.projetos h2 {
     text-align: center;
     padding: 5px;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.323);
+    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.239);
 }
 
 /* Habilidades */
