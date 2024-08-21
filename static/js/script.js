@@ -5,7 +5,7 @@ function main() {
     var item = document.querySelectorAll("[data-anima]")
     
     function animeScroll() {
-        let windowTop = window.pageYOffset + window.innerHeight * 0.8
+        let windowTop = window.pageYOffset + window.innerHeight * 0.9
     
         item.forEach((element) => {
             if(windowTop > element.offsetTop) {

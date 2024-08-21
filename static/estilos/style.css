@@ -24,10 +24,11 @@
 
 :root {
     --main-color: #0A66C2;
+    --secundary-color: #0a66c231;
     --bg-color1: #ffffff;
-    --bg-color2: #000000;
+    --bg-color2: #1b1c1d;
     --color1: #ffffff;
-    --color2: #000000;
+    --color2: #1b1c1d;
 }
 
 html {
@@ -37,17 +38,18 @@ html {
 
 html::-webkit-scrollbar {
     width: 10px;
-    background-color: #dfdfdf;
+    background-color: var(--color1);
 }
 
 html::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
+    background-color: var(--secundary-color);
     border-radius: 5px;
 }
 
 body {
     font-size: 100%;
     color: var(--color1);
+    padding-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -62,10 +64,29 @@ p, a {
 
 section {
     width: 100%;
-    min-height: calc(100vh - 75px);
+    min-height: 100dvh;
     background-color: #ffffff;
-    border-top: 2px solid var(--color2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.33);
 }
+
+a.ctt {
+    color: var(--color2);
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--bg-color1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #0a66c29e;
+    transition: .2s;
+}
+
+
+a.ctt:hover { 
+    box-shadow: 0px 0px 2px #0a66c29e;
+    color: var(--main-color);
+    transform: scale(1.05);
+}
+
 /* Gerais */
 
 /* animações */
@@ -112,12 +133,11 @@ header.cabecalho {
 }
 
 .cabecalho-content {
-    background-color: var(--color1);
-    border-bottom: 2px solid var(--color2);
+    background-color: var(--bg-color1);
     padding: 20px 20px;
     display: flex;
     justify-content: space-around;
-    box-shadow: 2px 0px 2px #000000;
+    box-shadow: 3px 0px 5px #00000052;
 }
 
 .cabecalho .cabecalho-img, nav {
@@ -134,10 +154,12 @@ header.cabecalho {
     font-weight: 400;
     font-size: 18px;
     color: var(--color2);
-    background-color: #0a66c231;
+    background-color: var(--bg-color1);
     padding: 0px 10px;
     border-radius: 10px;
     position: relative;
+    box-shadow: 0px 0px 6px #0a66c29e;
+    transition: .2s;
 }
 
 .cabecalho-content nav a::after {
@@ -157,6 +179,7 @@ header.cabecalho {
 }
 
 .cabecalho-menu a:hover {
+    box-shadow: none;
     color: var(--main-color);
     transform: scale(1.05);
 }
@@ -173,8 +196,12 @@ header.cabecalho {
 
 .inicio-txt {
     position: absolute;
-    top: 40%;
     left: 10%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
 }
 
 .inicio-txt > h2 {
@@ -201,6 +228,7 @@ header.cabecalho {
 /* Sobre */
 #sobre {
     padding: 30px;
+    background-color: var(--secundary-color);
 }
 
 .sobre-content {
@@ -254,6 +282,10 @@ header.cabecalho {
 /* Sobre */
 
 /* Projetos */
+#projetos-m {
+    background-color: var(--secundary-color);
+}
+
 #projetos, #projetos-m {
     padding: 30px;
 }
@@ -269,11 +301,12 @@ section.projetos h2 {
 
 .projetos-content, .projetos-content-m {
     max-width: 1200px;
+    min-height: 80dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
+    gap: 30px;
     margin: 0 auto;
 }
 
@@ -444,13 +477,14 @@ section.projetos h2 {
 }
 
 .habilidades-content {
+    max-width: 1200px;
+    min-height: 80dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-between;
+    gap: 30px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .habilidades-content > h2 {
@@ -519,8 +553,7 @@ section.projetos h2 {
 footer {
     background-color: var(--bg-color1);
     width: 100%;
-    box-shadow: -2px 0px 3px #000000;
-    border-top: 2px solid var(--color2);
+    box-shadow: -3px 0px 5px #00000052;
 }
 
 .footer {
