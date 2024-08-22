@@ -500,7 +500,7 @@ section.projetos h2 {
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
-    width: 100vw;
+    width: 90vw;
     padding: 10px;
     max-width: 600px;
     overflow: hidden;

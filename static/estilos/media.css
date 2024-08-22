@@ -10,7 +10,7 @@
         font-size: 25px;
         display: block;
         background-color: #0A66C2;
-        color: #000;
+        color: #fff;
         margin: 20px;
         padding: 10px;
         border-radius: 8px;
@@ -122,10 +122,6 @@
 
     .caixa-breve p {
         font-size: .8em;
-    }
-
-    .habilidades-box {
-        width: 100%;
     }
 
     .habilidades-caixa {
