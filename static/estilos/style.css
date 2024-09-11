@@ -49,7 +49,6 @@ html::-webkit-scrollbar-thumb {
 body {
     font-size: 100%;
     color: var(--color1);
-    padding-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -133,11 +132,10 @@ header.cabecalho {
 }
 
 .cabecalho-content {
-    background-color: var(--bg-color1);
+    background-color: transparent;
     padding: 20px 20px;
     display: flex;
     justify-content: space-around;
-    box-shadow: 3px 0px 5px #00000052;
 }
 
 .cabecalho .cabecalho-img, nav {
@@ -147,6 +145,10 @@ header.cabecalho {
 .cabecalho-menu {
     display: flex;
     gap: 30px;
+    box-shadow: 0px 0px 6px #0a66c29e;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--bg-color1);
 }
 
 .cabecalho-menu a {
@@ -156,9 +158,7 @@ header.cabecalho {
     color: var(--color2);
     background-color: var(--bg-color1);
     padding: 0px 10px;
-    border-radius: 10px;
     position: relative;
-    box-shadow: 0px 0px 6px #0a66c29e;
     transition: .2s;
 }
 
