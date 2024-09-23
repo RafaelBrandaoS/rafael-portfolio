@@ -24,10 +24,10 @@
 
 :root {
     --main-color: #0A66C2;
-    --secundary-color: #0a66c231;
-    --bg-color1: #ffffff;
+    --secundary-color: #8ec5fc31;
+    --bg-color1: #fdfffe;
     --bg-color2: #1b1c1d;
-    --color1: #ffffff;
+    --color1: #fdfffe;
     --color2: #1b1c1d;
 }
 
@@ -64,7 +64,7 @@ p, a {
 section {
     width: 100%;
     min-height: 100dvh;
-    background-color: #ffffff;
+    background-color: var(--bg-color1);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.33);
 }
 
@@ -208,7 +208,6 @@ header.cabecalho {
     color: var(--color2);
     font-weight: 700;
     font-size: 5em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .inicio-txt p {
@@ -216,12 +215,10 @@ header.cabecalho {
     color: var(--color2);
     font-weight: 400;
     font-size: 1.5em;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .nome-destaque {
     color: var(--main-color);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 /* Início */
 
@@ -277,7 +274,6 @@ header.cabecalho {
     text-indent: 15px;
     margin-bottom: 10px;
     color: var(--color2);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 /* Sobre */
 
@@ -315,7 +311,6 @@ section.projetos h2 {
     text-align: center;
     font-size: 50px;
     color: var(--main-color);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .projetos-box, .projetos-box-m {
@@ -492,7 +487,6 @@ section.projetos h2 {
     text-align: center;
     font-size: 50px;
     color: var(--main-color);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .habilidades-box {
