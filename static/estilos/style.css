@@ -26,9 +26,9 @@
     --main-color: #0A66C2;
     --secundary-color: #8ec5fc31;
     --bg-color1: #fdfffe;
-    --bg-color2: #1b1c1d;
+    --bg-color2: #28292b;
     --color1: #fdfffe;
-    --color2: #1b1c1d;
+    --color2: #28292b;
 }
 
 html {
@@ -53,12 +53,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Passion One', cursive;
-    color: var(--color1);
+    color: var(--color2);
 }
 
 p, a {
     font-family: 'Roboto', sans-serif;
-    color: var(--color1);
+    color: var(--color2);
 }
 
 section {
@@ -259,22 +259,59 @@ header.cabecalho {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px #0a66c29e;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
 }
 
 .sobre-txt > h2 {
     font-family: 'Passion One', cursive;
-    font-size: 60px;
-    margin-bottom: 30px;
+    font-size: 2.5em;
     color: var(--main-color);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 
 .sobre-txt > p {
-    font-size: 23px;
+    font-size: 1.3em;
     text-indent: 15px;
-    margin-bottom: 10px;
     color: var(--color2);
 }
+
+.tecnologias {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tecnologias > h3 {
+    color: var(--main-color);
+    min-width: 100%;
+    font-size: 1.5em;
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 2px var(--main-color);
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+}
+
+.tecnologia > img {
+    width: 25px;
+}
+
+.tecnologia > p {
+    color: var(--color2);
+    font-size: .6em;
+}
+
 /* Sobre */
 
 /* Projetos */
@@ -436,7 +473,7 @@ section.projetos h2 {
     max-width: 300px;
 }
 
-.detalhes-infos > div > img {
+.img > a > img {
     width: 100%;
     max-width: 400px;
     box-shadow: 0px 0px 8px #0a66c29e;
@@ -467,77 +504,72 @@ section.projetos h2 {
 /* Projetos */
 
 /* Habilidades */
-#habilidades {
+#contato {
     padding: 30px;
 }
 
-.habilidades-content {
+.contato-content {
     max-width: 1200px;
-    min-height: 80dvh;
+    /* min-height: 70dvh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 40px;
     margin: 0 auto;
 }
 
-.habilidades-content > h2 {
+.contato-content > h2 {
     font-family:  'Passion One', cursive;
     text-align: center;
     font-size: 50px;
     color: var(--main-color);
 }
 
-.habilidades-box {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 20px;
-    width: 90vw;
-    padding: 10px;
-    max-width: 600px;
-    overflow: hidden;
-}
-
-@keyframes carrosel {
-    0% {
-        transform: translateX(0%);
-    }
-
-    100% {
-        transform: translateX(-810%);
-    }
-}
-
-.habilidades-caixa {
-    background-color: var(--bg-color1);
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px #0a66c29e;
-    transition: 0.3s;
-    cursor: pointer;
-    width: 130px;
-    min-width: 130px;
-    animation: carrosel 8s linear infinite;
-}
-
-.habilidades-caixa > img {
+.form-contato {
     width: 100%;
-    padding: 15px;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
 }
 
-.habilidades-caixa:hover {
-    transform: scale(1.03) translateY(-3px);
-    box-shadow: 0px 0px 6px #0a66c29e;
+.form-contato > textarea {
+    resize: vertical;
+    min-height: 32px;
 }
 
-.habilidades-caixa > h3 {
-    color: var(--color2);
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 5px;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.239);
+.form-contato > input, textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 0px 2px var(--color2);
+}
+
+.contato-submit {
+    width: 100px !important;
+    background-color: var(--secundary-color);
+    align-self: end;
+}
+
+.infos-contato {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+
+.sucesso {
+    color: #0ac235;
+}
+
+.erro {
+    color: #c2100a;
 }
 
 /* Habilidades */

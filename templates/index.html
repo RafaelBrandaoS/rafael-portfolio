@@ -29,7 +29,7 @@
                 <a href="#inicio">Início</a>
                 <a href="#sobre">Sobre mim</a>
                 <a href="#projetos">Projetos</a>
-                <a href="#habilidades">Habilidades</a>
+                <a href="#contato">Contato</a>
             </nav>
         </div>
     </header>
@@ -55,9 +55,48 @@
                     <img src="{{ url_for('static', filename='imagens/programador.png') }}">
                 </div>
                 <div class="sobre-txt" data-anima="right">
-                    <h2>Sobre Mim</h2>
+                    <h2>SobreMim</h2>
                     <p>Desenvolvedor Full-Stack com experiência em Python e Flask/Django. Busco contribuir para sistemas robustos e eficientes, otimizar desempenho e colaborar em equipes ágeis. Focado em arquiteturas escaláveis, performance e segurança.<br></p>
                     <p>Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos e contribuir para projetos inovadores. Se você está procurando um programador dedicado e detalhista, vamos conversar!</p>
+                    <div class="tecnologias">
+                        <h3>minhas habilidades</h3>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/python.png') }}" alt="python-icon">
+                            <p>Python</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/flask.png') }}" alt="python-icon">
+                            <p>Flask</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/django.png') }}" alt="python-icon">
+                            <p>Django</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/js.png') }}" alt="js-icon">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/mysql.png') }}" alt="mysql-icon">
+                            <p>MySql</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/html5.png') }}" alt="html-icon">
+                            <p>HTML</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/css-3.png') }}" alt="css-icon">
+                            <p>CSS</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/git.png') }}" alt="git-icon">
+                            <p>Git</p>
+                        </div>
+                        <div class="tecnologia">
+                            <img src="{{ url_for('static', filename='imagens/github.png') }}" alt="github-icon">
+                            <p>GitHub</p>
+                        </div>
+                    </div>
                 </div>
             </div>
     </section>
@@ -65,7 +104,7 @@
     <!-- Projetos profissionais -->
     <section class="sessao" id="projetos">
         <div class="projetos-content">
-            <h2 data-anima="down">Projetos Profissionais </h2>
+            <h2 data-anima="down">Projetos Profissionais</h2>
             <div class="projetos-box" data-anima="left">
                 {% for projeto in profissionais %}
                 <div class="projetos-caixa-m">
@@ -109,73 +148,26 @@
     </section>
 
     <!-- Habilidades -->
-    <section class="sessao" id="habilidades">
-        <div class="habilidades-content">
-            <h2 data-anima="down">Habilidades </h2>
-            <div class="habilidades-container" data-anima="up">
-                <div class="habilidades-box">
-                    <div id="html-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/html5.png') }}" alt="html-icon">
-                        <h3>HTML</h3>
-                    </div>
-                    <div id="css-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/css-3.png') }}" alt="css-icon">
-                        <h3>CSS</h3>
-                    </div>
-                    <div id="js-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/js.png') }}" alt="js-icon">
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div id="py-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/python.png') }}" alt="python-icon">
-                        <h3>Python</h3>
-                    </div>
-                    <div id="mysql-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/mysql.png') }}" alt="mysql-icon">
-                        <h3>MySql</h3>
-                    </div>
-                    <div id="git-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/git.png') }}" alt="git-icon">
-                        <h3>Git</h3>
-                    </div>
-                    <div id="github-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/github.png') }}" alt="github-icon">
-                        <h3>GitHub</h3>
-                    </div>
-                    <div id="html-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/html5.png') }}" alt="html-icon">
-                        <h3>HTML</h3>
-                    </div>
-                    <div id="css-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/css-3.png') }}" alt="css-icon">
-                        <h3>CSS</h3>
-                    </div>
-                    <div id="js-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/js.png') }}" alt="js-icon">
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div id="py-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/python.png') }}" alt="python-icon">
-                        <h3>Python</h3>
-                    </div>
-                    <div id="mysql-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/mysql.png') }}" alt="mysql-icon">
-                        <h3>MySql</h3>
-                    </div>
-                    <div id="git-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/git.png') }}" alt="git-icon">
-                        <h3>Git</h3>
-                    </div>
-                    <div id="github-box" class="habilidades-caixa">
-                        <img src="{{ url_for('static', filename='imagens/github.png') }}" alt="github-icon">
-                        <h3>GitHub</h3>
-                    </div>
-                </div>
+    <section class="sessao" id="contato">
+        <div class="contato-content">
+            <h2 data-anima="down">Contato</h2>
+            <form data-anima="up" class="form-contato" action="{{ url_for('enviarMensagem') }}" method="post">
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="text" name="assunto" placeholder="Assunto">
+                <textarea name="mensagem" placeholder="Mensagem" rows="5"></textarea>
+                <input class="contato-submit" type="submit" value="Enviar">
+                {% set mensagem = get_flashed_messages(with_categories=True) %}
+                {% if mensagem %}
+                    <p class="{{ mensagem[0][0] }}">{{ mensagem[0][1] }}</p>
+                {% endif %}
+            </form>
+            <div class="infos-contato">
+                <p data-anima="left">rafaelbrandao431@gmail.com</p>
+                <p data-anima="right">(61) 9 9155-1963</p>
             </div>
-            <a class="ctt" data-anima="up" href="https://www.linkedin.com/in/rafael-brand%C3%A3o-14a21b249/">VAMOS TRABALHAR JUNTOS</a>
         </div>
     </section>
-
     </main>
 
     <!-- Footer -->

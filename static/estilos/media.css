@@ -73,8 +73,25 @@
         font-size: 2.5em;
     }
 
-    .sobre-content p {
+    .sobre-txt > p {
         font-size: 1em;
+    }
+
+    .tecnologias {
+        gap: 4px;
+    }
+
+    .tecnologia {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .tecnologia > img {
+        width: 17px;
+    }
+
+    .tecnologia > p {
+        font-size: .6em;
     }
 
     .projetos-caixa, .projetos-caixa-m {
@@ -172,11 +189,11 @@
 
 @media screen and (max-width: 1050px) and (min-width: 768px) {
 
-    .sobre-content p {
+    .sobre-txt > p {
         font-size: 1.2em;
     }
 
-    .sobre-content img {
+    .sobre-content > .img-container > img {
         width: 320px;
     }
 

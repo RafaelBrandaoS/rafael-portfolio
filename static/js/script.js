@@ -60,7 +60,7 @@ function main() {
                 <span id="fexar" class="material-symbols-outlined">close</span>
                 <div class="detalhes-infos card carregando">
                     <div class="img">
-                        <img src="../static/${img}" alt="${nome}">
+                        <a href="${projeto}"  target="_blank" rel="noopener noreferrer"><img src="../static/${img}" alt="${nome}"></a>
                     </div>
                     <div class="detalhes-desc-btn card carregando">
                         <p class="detalhes-desc detalhes-txt">${desc}</p>
@@ -74,7 +74,7 @@ function main() {
             `
             div.classList.add('detalhes')
             document.getElementsByTagName('main')[0].appendChild(div)
-            const cardImg = div.querySelector('.img > img')
+            const cardImg = div.querySelector('.img > a > img')
             cardImg.onload = () => {
                 div.getElementsByClassName('card')[0].classList.remove('carregando')
                 div.getElementsByClassName('card')[1].classList.remove('carregando')
