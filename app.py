@@ -2,6 +2,10 @@ from flask import Flask, render_template, redirect, request, flash
 from flask_mail import Mail, Message
 from python.projetos import listaProjetosPessoais, listaProjetosProfissionais
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+MAIL_PASSWORD = os.getenv('MAIL_PASSWORD')
 
 sk = os.urandom(24)
 
@@ -12,7 +16,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'rafaelbrandao431@gmail.com'
-app.config['MAIL_PASSWORD'] = 'mbrx bwzp dgca uyav'
+app.config['MAIL_PASSWORD'] = MAIL_PASSWORD
 app.config['MAIL_DEFAULT_SENDER'] = 'rafaelbrandao431@gmail.com'
 
 mail = Mail(app)
